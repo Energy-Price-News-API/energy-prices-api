@@ -4,7 +4,7 @@
   "description": "info tracking on energy prices",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon index.js"
   },
   "author": "Sam Anglin (MizouziE)",
   "license": "ISC",
@@ -12,5 +12,8 @@
     "axios": "^0.26.1",
     "cheerio": "^1.0.0-rc.10",
     "express": "^4.17.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
   }
 }
