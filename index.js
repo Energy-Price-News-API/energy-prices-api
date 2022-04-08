@@ -56,11 +56,13 @@ app.get('/news', (req, res) => {
 })
 
 app.get('/news/:sourceId', async (req, res) => {
-    const sorceId = req.params.sourceId
+    const sourceId = req.params.sourceId
 
-    const source = sources.filter(source => source.name == sourceId)
+    const sourceName = sources.filter(source => source.name.toLowerCase().replace(/ /g, '') == sourceId)
 
-    axios.get('')
+    console.log(sourceName)
+
+    // axios.get('')
 })
 
 app.listen(PORT, () => console.log(`server running on PORT ${PORT}`))
