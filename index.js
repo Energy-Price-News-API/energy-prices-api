@@ -55,6 +55,12 @@ app.get('/news', (req, res) => {
     res.json(articles)
 })
 
+app.get('/news/:sourceId', async (req, res) => {
+    const sorceId = req.params.sourceId
 
+    const source = sources.filter(source => source.name == sourceId)
+
+    axios.get('')
+})
 
 app.listen(PORT, () => console.log(`server running on PORT ${PORT}`))
