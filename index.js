@@ -7,14 +7,28 @@ const { html } = require('cheerio/lib/static')
 
 const app = express()
 
+const sources = [
+    {
+        name: 'The Guardian',
+        site: 'https://www.theguardian.com/uk/money',
+        base: ''
+    },
+    {
+        name: 'The Times',
+        site: 'https://www.thetimes.co.uk/#section-news',
+        base: 'https://www.thetimes.co.uk'
+    },
+    {
+        name: 'The Telegraph',
+        site: 'https://www.telegraph.co.uk/money/',
+        base: 'https://www.telegraph.co.uk'
+    }
+]
+
 const articles = []
 
-app.get('/', (req, res) => {
-    res.json('Welcome to the Energy Price News tracker API')
-})
-
-app.get('/news', (req, res) => {
-    axios.get('https://www.theguardian.com/uk/money')
+sources.forEach(source => {
+    axios.get(source.site)
         .then((response) => {
             const html = response.data
             const $ = cheerio.load(html)
@@ -22,13 +36,25 @@ app.get('/news', (req, res) => {
             $('a:contains("energy")', html).each(function () {
                 const title = $(this).text()
                 const url = $(this).attr('href')
+
                 articles.push({
                     title,
-                    url
+                    url: source.base + url,
+                    source: source.name
                 })
             })
-            res.json(articles)
-        }).catch((err) => console.log(err))
+
+        })
 })
+
+app.get('/', (req, res) => {
+    res.json('Welcome to the Energy Price News tracker API')
+})
+
+app.get('/news', (req, res) => {
+    res.json(articles)
+})
+
+
 
 app.listen(PORT, () => console.log(`server running on PORT ${PORT}`))
