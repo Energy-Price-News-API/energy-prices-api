@@ -81,7 +81,7 @@ app.get('/news', (req, res) => {
     res.json(articles)
 })
 
-app.get('/news/:sourceId', async (req, res) => {
+app.get('/news/:sourceId', (req, res) => {
     const sourceId = req.params.sourceId
 
     const sourceSite = sources.filter(source => source.name.toLowerCase().replace(/ /g, '') == sourceId)[0].site
