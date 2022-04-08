@@ -55,6 +55,31 @@ app.get('/news', (req, res) => {
     res.json(articles)
 })
 
+app.get('/news/:sourceId', async (req, res) => {
+    const sourceId = req.params.sourceId
 
+    const sourceSite = sources.filter(source => source.name.toLowerCase().replace(/ /g, '') == sourceId)[0].site
+    const sourceBase = sources.filter(source => source.name.toLowerCase().replace(/ /g, '') == sourceId)[0].base
+    const sourceName = sources.filter(source => source.name.toLowerCase().replace(/ /g, '') == sourceId)[0].name
+
+    axios.get(sourceSite)
+        .then(response => {
+            const html = response.data
+            const $ = cheerio.load(html)
+            const singleSourceArticles = []
+
+            $('a:contains("energy")', html).each(function () {
+                const title = $(this).text()
+                const url = $(this).attr('href')
+
+                singleSourceArticles.push({
+                    title,
+                    url: sourceBase + url,
+                    source: sourceName
+                })
+            })
+            res.json(singleSourceArticles)
+        }).catch(err => console.log(err))
+})
 
 app.listen(PORT, () => console.log(`server running on PORT ${PORT}`))
