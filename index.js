@@ -11,18 +11,44 @@ const sources = [
     {
         name: 'The Guardian',
         site: 'https://www.theguardian.com/uk/money',
-        base: ''
+        base: 'https://12ft.io/'
     },
     {
         name: 'The Times',
         site: 'https://www.thetimes.co.uk/#section-news',
-        base: 'https://www.thetimes.co.uk'
+        base: 'https://12ft.io/https://www.thetimes.co.uk'
     },
     {
         name: 'The Telegraph',
         site: 'https://www.telegraph.co.uk/money/',
-        base: 'https://www.telegraph.co.uk'
-    }
+        base: 'https://12ft.io/https://www.telegraph.co.uk'
+    },
+    {
+        name: 'Metor UK',
+        site: 'https://metro.co.uk/news/uk/',
+        base: ''
+    },
+    {
+        name: 'BBC news',
+        site: 'https://www.bbc.com/news/science-environment-56837908',
+        base: 'https://www.bbc.com'
+    },
+    {
+        name: 'Sky news',
+        site: 'https://news.sky.com/climate',
+        base: 'https://news.sky.com'
+    },
+    {
+        name: 'Reuters',
+        site: 'https://www.reuters.com/business/energy/',
+        base: 'https://www.reuters.com'
+    },
+    // TODO: Below not working!
+    // {
+    //     name: 'Bloomberg',
+    //     site: 'https://www.bloomberg.com/green-politics?srnd=green-energy-science',
+    //     base: 'https://12ft.io/'
+    // }
 ]
 
 const articles = []
