@@ -51,7 +51,23 @@ const sources = [
     // }
 ]
 
+const twitterAccounts = [
+    {
+        account: 'BorisJohnson'
+    },
+    {
+        account: 'RishiSunak'
+    },
+    {
+        account: 'Keir_Starmer'
+    },
+    {
+        account: 'SadiqKhan'
+    }
+]
+
 const articles = []
+const tweets = []
 
 sources.forEach(source => {
     axios.get(source.site)
@@ -72,6 +88,17 @@ sources.forEach(source => {
 
         })
 })
+
+twitterAccounts.forEach(twitterAccount => {
+    axios.get('https://twitter.com/search?p=from%3A' + twitterAccount.account +'%20energy')
+        .then((response) => {
+
+                tweets.push({
+                    "See tweets from": '@' + twitterAccount.account,
+                    link: 'https://twitter.com/search?q=from%3A' + twitterAccount.account + '%20energy'
+                })
+            })
+        })
 
 app.get('/', (req, res) => {
     res.json('Welcome to the Energy Price News tracker API')
@@ -106,6 +133,10 @@ app.get('/news/:sourceId', (req, res) => {
             })
             res.json(singleSourceArticles)
         }).catch(err => console.log(err))
+})
+
+app.get('/twitter', (req, res) => {
+    res.json(tweets)
 })
 
 app.listen(PORT, () => console.log(`server running on PORT ${PORT}`))
