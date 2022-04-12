@@ -4,7 +4,7 @@
   "description": "info tracking on energy prices",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon index.js"
+    "start": "node index.js"
   },
   "author": "Sam Anglin (MizouziE)",
   "license": "ISC",
@@ -12,9 +12,6 @@
     "axios": "^0.26.1",
     "cheerio": "^1.0.0-rc.10",
     "express": "^4.17.3"
-  },
-  "devDependencies": {
-    "nodemon": "^2.0.15"
   },
   "engines": {
     "node": "16.x",
