@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "build": "npm run build",
-    "heroku-postbuild": "npm run build"
+    "build": "npm run build"
   },
   "author": "Sam Anglin (MizouziE)",
   "license": "ISC",
