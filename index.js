@@ -139,4 +139,4 @@ app.get('/twitter', (req, res) => {
     res.json(tweets)
 })
 
-app.listen(PORT, () => console.log(`server running on PORT ${PORT}`))
+app.listen(process.env.PORT || PORT, () => console.log(`server running on PORT ${PORT}`))
