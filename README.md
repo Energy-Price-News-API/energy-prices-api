@@ -42,9 +42,15 @@ I would like to encourage contributions of any kind to this project:
     - Suggestions on how to do something
     - Problems/bugs found in the code
     - Ideas for features
+    - Discussion around best practices so that others can learn from your experience/knowledge
 - Pull Requests
     - Should you have a feature you'd like to share already coded, please submit a detailed pull request
     - A preferred PR format is **TBC**
+- Documentation
+    - Spellchecking and typo corrections are **ALWAYS** welcome :joy:, seriously, I hate typos but make them ffrequently!
+    - Further detail. If you feel something needs to be expanded on, please do so and submit your PR.
+    - Wiki: If we get to a point that a wiki would be helpful, please open an issue/discussion with your suggestions
+    - As the project grows, this `README.md` file will need updating, so add to it where you see fit.
 - Share what you do
     - In order to encourage others to join in, feel free to share what you have done on your social media/websites
     - If you know someone that has done something similar, please show them this project as their input would be greatly appreciated
