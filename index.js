@@ -76,7 +76,7 @@ sources.forEach(source => {
             const $ = cheerio.load(html)
 
             $('a:contains("energy")', html).each(function () {
-                const title = $(this).text()
+                const title = $(this).text().trim()
                 const url = $(this).attr('href')
 
                 articles.push({
