@@ -76,7 +76,7 @@ sources.forEach(source => {
             const $ = cheerio.load(html)
 
             $('a:contains("energy")', html).each(function () {
-                const title = $(this).text().trim()
+                const title = $(this).text().replace(/(\r\n|\n|\r)/gm, "").trim()
                 const url = $(this).attr('href')
 
                 articles.push({
@@ -122,7 +122,7 @@ app.get('/news/:sourceId', (req, res) => {
             const singleSourceArticles = []
 
             $('a:contains("energy")', html).each(function () {
-                const title = $(this).text()
+                const title = $(this).text().replace(/(\r\n|\n|\r)/gm, "").trim()
                 const url = $(this).attr('href')
 
                 singleSourceArticles.push({
