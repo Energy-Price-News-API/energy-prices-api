@@ -4,8 +4,7 @@
   "description": "info tracking on energy prices",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
-    "build": "npm run build"
+    "start": "node index.js"
   },
   "author": "Sam Anglin (MizouziE)",
   "license": "ISC",
