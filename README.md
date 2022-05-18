@@ -1,4 +1,7 @@
 # Energy Price News API
+<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
+<!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 A project to create a public API that scrapes news sites for anything concerning the changes in energy prices.
 
@@ -54,3 +57,22 @@ I would like to encourage contributions of any kind to this project:
 - Share what you do
     - In order to encourage others to join in, feel free to share what you have done on your social media/websites
     - If you know someone that has done something similar, please show them this project as their input would be greatly appreciated
+## Contributors ✨
+
+Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+<table>
+  <tr>
+    <td align="center"><a href="https://github.com/OakenSushi"><img src="https://avatars.githubusercontent.com/u/39666763?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Soshun Esaki</b></sub></a><br /><a href="https://github.com/MizouziE/energy-prices-api/commits?author=OakenSushi" title="Code">💻</a></td>
+  </tr>
+</table>
+
+<!-- markdownlint-restore -->
+<!-- prettier-ignore-end -->
+
+<!-- ALL-CONTRIBUTORS-LIST:END -->
+
+This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
