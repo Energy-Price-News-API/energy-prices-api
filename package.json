@@ -6,7 +6,10 @@
   "scripts": {
     "start": "node index.js"
   },
-  "author": "Sam Anglin (MizouziE)",
+  "author": "Sam Anglin <s.anglin@live.co.uk> (MizouziE)",
+  "contributors": [
+    "Soshun Esaki (https://github.com/OakenSushi)"
+  ],
   "license": "ISC",
   "dependencies": {
     "axios": "^0.26.1",
