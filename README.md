@@ -7,7 +7,7 @@ A project to create a public API that scrapes news sites for anything concerning
 
 This project's secondary aim is to help beginners learn how to contribute to open source projects and will be purposely kept as basic as possible.
 
-Up to date version hosted at: **TBC**
+Up to date version hosted at: [RapidAPI Hub](https://rapidapi.com/sanglin-TlEqlfGPc/api/energy-price-news/)
 
 ### Original Idea
 This project was first thought up after watching [this video](https://www.youtube.com/watch?v=GK4Pl-GmPHk&t=3184s) by [Ania Kubów](https://www.youtube.com/channel/UC5DNytAJ6_FISueUfzZCVsw), so many thanks to her for the inspiration. Be sure to check the channel out for more easy to follow tutorials!
