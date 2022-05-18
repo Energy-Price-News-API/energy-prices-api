@@ -1,0 +1,24 @@
+{
+  "projectName": "energy-prices-api",
+  "projectOwner": "MizouziE",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": true,
+  "commitConvention": "none",
+  "contributors": [
+    {
+      "login": "OakenSushi",
+      "name": "Soshun Esaki",
+      "avatar_url": "https://avatars.githubusercontent.com/u/39666763?v=4",
+      "profile": "https://github.com/OakenSushi",
+      "contributions": [
+        "code"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7
+}
