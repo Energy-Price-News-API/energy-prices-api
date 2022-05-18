@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node index.js"
   },
-  "author": "Sam Anglin <s.anglin@live.co.uk> (MizouziE)",
+  "author": "Sam Anglin <> (MizouziE)",
   "contributors": [
     "Soshun Esaki (https://github.com/OakenSushi)"
   ],
@@ -19,5 +19,8 @@
   "engines": {
     "node": "16.x",
     "npm": "8.x"
+  },
+  "devDependencies": {
+    "all-contributors-cli": "^6.20.0"
   }
 }
