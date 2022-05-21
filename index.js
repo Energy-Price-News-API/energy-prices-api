@@ -10,7 +10,7 @@ const sources = require('./data/sources.json');
 
 const app = express();
 
-const articles = [];
+const articles = {};
 const tweets = [];
 
 sources.forEach((source) => {
@@ -27,11 +27,11 @@ sources.forEach((source) => {
       const sentences = title.split('...'); //splitting title by '...'
       const uniqueSentences = [...new Set(sentences)]; //Set will provide us with distinct values in array
 
-      articles.push({
+      articles[url] = {
         title: uniqueSentences[0],
         url: source.base + url,
         source: source.name,
-      });
+      };
     });
   });
 });
@@ -80,7 +80,7 @@ app.get('/news/:sourceId', (req, res) => {
     .then((response) => {
       const html = response.data;
       const $ = cheerio.load(html);
-      const singleSourceArticles = [];
+      const singleSourceArticles = {};
 
       $('a:contains("energy")', html).each(function () {
         const title = $(this)
@@ -91,11 +91,11 @@ app.get('/news/:sourceId', (req, res) => {
         const sentences = title.split('...'); //splitting title by '...'
         const uniqueSentences = [...new Set(sentences)]; //Set will provide us with distinct values in array
 
-        singleSourceArticles.push({
+        singleSourceArticles[url] = {
           title: uniqueSentences[0],
           url: sourceBase + url,
           source: sourceName,
-        });
+        };
       });
       res.json(singleSourceArticles);
     })
