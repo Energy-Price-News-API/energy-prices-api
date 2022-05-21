@@ -78,11 +78,11 @@ sources.forEach(source => {
             $('a:contains("energy")', html).each(function () {
                 const title = $(this).text().replace(/(\r\n|\n|\r)/gm, "").trim()
                 const url = $(this).attr('href')
-                const sentences= title.split('.'); //splitting title by '.'
-                const uniqueSentences = [...new Set(sentences)].join('.'); //Set will provide us with distinct values in array which we can then join by '.'
+                const sentences= title.split('...'); //splitting title by '...'
+                const uniqueSentences = [...new Set(sentences)]; //Set will provide us with distinct values in array
                 
                 articles.push({
-                    title: uniqueSentences,
+                    title: uniqueSentences[0],
                     url: source.base + url,
                     source: source.name
                 })
@@ -126,11 +126,11 @@ app.get('/news/:sourceId', (req, res) => {
             $('a:contains("energy")', html).each(function () {
                 const title = $(this).text().replace(/(\r\n|\n|\r)/gm, "").trim()
                 const url = $(this).attr('href')
-                const sentences= title.split('.'); //splitting title by '.'
-                const uniqueSentences = [...new Set(sentences)].join('.'); //Set will provide us with distinct values in array which we can then join by '.'
+                const sentences= title.split('...'); //splitting title by '...'
+                const uniqueSentences = [...new Set(sentences)]; //Set will provide us with distinct values in array 
 
                 singleSourceArticles.push({
-                    title: uniqueSentences,
+                    title: uniqueSentences[0],
                     url: sourceBase + url,
                     source: sourceName
                 })
