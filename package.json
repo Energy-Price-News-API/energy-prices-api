@@ -7,9 +7,12 @@
     "start": "node index.js",
     "dev": "nodemon index"
   },
-  "author": "Sam Anglin <> (MizouziE)",
+  "author": "Sam Anglin <s.anglin@live.co.uk> (MizouziE)",
   "contributors": [
-    "Soshun Esaki (https://github.com/OakenSushi)"
+    "Soshun Esaki (https://github.com/OakenSushi)",
+    "nulad (https://github.com/nulad)",
+    "takanome_dev (https://github.com/TAKANOME-DEV)",
+    "AyushiN (https://github.com/ANaphade)"
   ],
   "license": "ISC",
   "dependencies": {
