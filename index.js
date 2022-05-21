@@ -1,55 +1,55 @@
-const PORT = 8000
-const express = require('express')
-const axios = require('axios')
-const cheerio = require('cheerio')
-const { response } = require('express')
-const { html } = require('cheerio/lib/static')
+const PORT = 8000;
+const express = require('express');
+const axios = require('axios');
+const cheerio = require('cheerio');
+const { response } = require('express');
+const { html } = require('cheerio/lib/static');
 
-const app = express()
+const app = express();
 
 const sources = [
-    {
-        name: 'The Guardian',
-        site: 'https://www.theguardian.com/uk/money',
-        base: 'https://12ft.io/'
-    },
-    {
-        name: 'The Times',
-        site: 'https://www.thetimes.co.uk/#section-news',
-        base: 'https://12ft.io/https://www.thetimes.co.uk'
-    },
-    {
-        name: 'The Telegraph',
-        site: 'https://www.telegraph.co.uk/money/',
-        base: 'https://12ft.io/https://www.telegraph.co.uk'
-    },
-    {
-        name: 'Metor UK',
-        site: 'https://metro.co.uk/news/uk/',
-        base: ''
-    },
-    {
-        name: 'BBC news',
-        site: 'https://www.bbc.com/news/science-environment-56837908',
-        base: 'https://www.bbc.com'
-    },
-    {
-        name: 'Sky news',
-        site: 'https://news.sky.com/climate',
-        base: 'https://news.sky.com'
-    },
-    {
-        name: 'Reuters',
-        site: 'https://www.reuters.com/business/energy/',
-        base: 'https://www.reuters.com'
-    },
-    // TODO: Below not working!
-    // {
-    //     name: 'Bloomberg',
-    //     site: 'https://www.bloomberg.com/green-politics?srnd=green-energy-science',
-    //     base: 'https://12ft.io/'
-    // }
-]
+  {
+    name: 'The Guardian',
+    site: 'https://www.theguardian.com/uk/money',
+    base: 'https://12ft.io/',
+  },
+  {
+    name: 'The Times',
+    site: 'https://www.thetimes.co.uk/#section-news',
+    base: 'https://12ft.io/https://www.thetimes.co.uk',
+  },
+  {
+    name: 'The Telegraph',
+    site: 'https://www.telegraph.co.uk/money/',
+    base: 'https://12ft.io/https://www.telegraph.co.uk',
+  },
+  {
+    name: 'Metor UK',
+    site: 'https://metro.co.uk/news/uk/',
+    base: '',
+  },
+  {
+    name: 'BBC news',
+    site: 'https://www.bbc.com/news/science-environment-56837908',
+    base: 'https://www.bbc.com',
+  },
+  {
+    name: 'Sky news',
+    site: 'https://news.sky.com/climate',
+    base: 'https://news.sky.com',
+  },
+  {
+    name: 'Reuters',
+    site: 'https://www.reuters.com/business/energy/',
+    base: 'https://www.reuters.com',
+  },
+  // TODO: Below not working!
+  // {
+  //     name: 'Bloomberg',
+  //     site: 'https://www.bloomberg.com/green-politics?srnd=green-energy-science',
+  //     base: 'https://12ft.io/'
+  // }
+];
 
 const twitterAccounts = [
     {
@@ -103,12 +103,12 @@ twitterAccounts.forEach(twitterAccount => {
         })
 
 app.get('/', (req, res) => {
-    res.json('Welcome to the Energy Price News tracker API')
-})
+  res.json('Welcome to the Energy Price News tracker API');
+});
 
 app.get('/news', (req, res) => {
-    res.json(articles)
-})
+  res.json(articles);
+});
 
 app.get('/news/:sourceId', (req, res) => {
     const sourceId = req.params.sourceId
@@ -140,7 +140,9 @@ app.get('/news/:sourceId', (req, res) => {
 })
 
 app.get('/twitter', (req, res) => {
-    res.json(tweets)
-})
+  res.json(tweets);
+});
 
-app.listen(process.env.PORT || PORT, () => console.log(`server running on PORT ${PORT}`))
+app.listen(process.env.PORT || PORT, () =>
+  console.log(`server running on PORT ${PORT}`)
+);
