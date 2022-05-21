@@ -28,6 +28,19 @@
         "code",
         "ideas"
       ]
+    },
+    {
+      "login": "TAKANOME-DEV",
+      "name": "takanome_dev",
+      "avatar_url": "https://avatars.githubusercontent.com/u/79809121?v=4",
+      "profile": "https://github.com/TAKANOME-DEV",
+      "contributions": [
+        "code",
+        "ideas",
+        "doc",
+        "infra",
+        "tool"
+      ]
     }
   ],
   "contributorsPerLine": 7
