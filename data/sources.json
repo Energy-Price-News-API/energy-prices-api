@@ -34,10 +34,4 @@
     "site": "https://www.reuters.com/business/energy/",
     "base": "https://www.reuters.com"
   }
-  // TODO: Below not working!
-  // {
-  //     "name": 'Bloomberg',
-  //     "site": 'https://www.bloomberg.com/green-politics?srnd=green-energy-science',
-  //     "base": 'https://12ft.io/'
-  // }
 ]
