@@ -18,6 +18,38 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "nulad",
+      "name": "nulad",
+      "avatar_url": "https://avatars.githubusercontent.com/u/8773503?v=4",
+      "profile": "https://github.com/nulad",
+      "contributions": [
+        "code",
+        "ideas"
+      ]
+    },
+    {
+      "login": "TAKANOME-DEV",
+      "name": "takanome_dev",
+      "avatar_url": "https://avatars.githubusercontent.com/u/79809121?v=4",
+      "profile": "https://github.com/TAKANOME-DEV",
+      "contributions": [
+        "code",
+        "ideas",
+        "doc",
+        "infra",
+        "tool"
+      ]
+    },
+    {
+      "login": "ANaphade",
+      "name": "AyushiN",
+      "avatar_url": "https://avatars.githubusercontent.com/u/36621150?v=4",
+      "profile": "https://github.com/ANaphade",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7
