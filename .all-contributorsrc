@@ -41,6 +41,15 @@
         "infra",
         "tool"
       ]
+    },
+    {
+      "login": "ANaphade",
+      "name": "AyushiN",
+      "avatar_url": "https://avatars.githubusercontent.com/u/36621150?v=4",
+      "profile": "https://github.com/ANaphade",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7
