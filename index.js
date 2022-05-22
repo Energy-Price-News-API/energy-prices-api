@@ -7,6 +7,8 @@ const { html } = require('cheerio/lib/static')
 
 const app = express()
 
+const path = require('path');
+
 const sources = [
     {
         name: 'The Guardian',
@@ -101,7 +103,8 @@ twitterAccounts.forEach(twitterAccount => {
         })
 
 app.get('/', (req, res) => {
-    res.json('Welcome to the Energy Price News tracker API')
+    //res.json('Welcome to the Energy Price News tracker API')
+    res.sendFile(path.resolve('./index.html'));
 })
 
 app.get('/news', (req, res) => {

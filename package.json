@@ -14,7 +14,8 @@
   "dependencies": {
     "axios": "^0.26.1",
     "cheerio": "^1.0.0-rc.10",
-    "express": "^4.17.3"
+    "express": "^4.17.3",
+    "path": "^0.12.7"
   },
   "engines": {
     "node": "16.x",
