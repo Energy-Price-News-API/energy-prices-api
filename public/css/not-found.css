@@ -1,0 +1,20 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(8, 41, 70);
+}
+main{
+    width: 90vw;
+    margin: 0 auto;
+    padding: 10px 10px;
+}
+main p{
+    background-color: #fff;
+    padding: 20px;
+    margin: auto;
+    border-radius: 10px;
+    text-align: center;
+}
