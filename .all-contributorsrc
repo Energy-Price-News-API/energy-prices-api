@@ -50,6 +50,19 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "Yoshemith",
+      "name": "Yoshemith Castellanos Irribarren",
+      "avatar_url": "https://avatars.githubusercontent.com/u/87047389?v=4",
+      "profile": "https://www.linkedin.com/in/Yoshemith/",
+      "contributions": [
+        "code",
+        "ideas",
+        "infra",
+        "content",
+        "design"
+      ]
     }
   ],
   "contributorsPerLine": 7

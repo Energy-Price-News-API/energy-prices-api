@@ -1,7 +1,7 @@
 # Energy Price News API
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-4-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-5-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 A project to create a public API that scrapes news sites for anything concerning the changes in energy prices.
@@ -82,6 +82,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="https://github.com/nulad"><img src="https://avatars.githubusercontent.com/u/8773503?v=4?s=100" width="100px;" alt=""/><br /><sub><b>nulad</b></sub></a><br /><a href="https://github.com/MizouziE/energy-prices-api/commits?author=nulad" title="Code">💻</a> <a href="#ideas-nulad" title="Ideas, Planning, & Feedback">🤔</a></td>
     <td align="center"><a href="https://github.com/TAKANOME-DEV"><img src="https://avatars.githubusercontent.com/u/79809121?v=4?s=100" width="100px;" alt=""/><br /><sub><b>takanome_dev</b></sub></a><br /><a href="https://github.com/MizouziE/energy-prices-api/commits?author=TAKANOME-DEV" title="Code">💻</a> <a href="#ideas-TAKANOME-DEV" title="Ideas, Planning, & Feedback">🤔</a> <a href="https://github.com/MizouziE/energy-prices-api/commits?author=TAKANOME-DEV" title="Documentation">📖</a> <a href="#infra-TAKANOME-DEV" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a> <a href="#tool-TAKANOME-DEV" title="Tools">🔧</a></td>
     <td align="center"><a href="https://github.com/ANaphade"><img src="https://avatars.githubusercontent.com/u/36621150?v=4?s=100" width="100px;" alt=""/><br /><sub><b>AyushiN</b></sub></a><br /><a href="https://github.com/MizouziE/energy-prices-api/commits?author=ANaphade" title="Code">💻</a></td>
+    <td align="center"><a href="https://www.linkedin.com/in/Yoshemith/"><img src="https://avatars.githubusercontent.com/u/87047389?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Yoshemith Castellanos Irribarren</b></sub></a><br /><a href="https://github.com/MizouziE/energy-prices-api/commits?author=Yoshemith" title="Code">💻</a> <a href="#ideas-Yoshemith" title="Ideas, Planning, & Feedback">🤔</a> <a href="#infra-Yoshemith" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a> <a href="#content-Yoshemith" title="Content">🖋</a> <a href="#design-Yoshemith" title="Design">🎨</a></td>
   </tr>
 </table>
 
