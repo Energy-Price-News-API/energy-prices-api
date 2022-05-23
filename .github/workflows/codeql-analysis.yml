@@ -2,31 +2,42 @@ name: 'CodeQL'
 
 on:
   push:
-    branches: [main]
+    branches: [master]
   pull_request:
-    branches: [main]
+    branches: [master]
 
 jobs:
   analyze:
     name: Analyze
     runs-on: ubuntu-latest
+    permissions:
+      actions: read
+      contents: read
+      security-events: write
+
     strategy:
       fail-fast: false
       matrix:
         language: ['javascript']
         node-version: [16.x]
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
+
       - name: Use Node.js v${{ matrix.node-version }}
         uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node-version }}
+
       - name: Install dependencies
         run: npm i
+
+        # Initializes the CodeQL tools for scanning.
       - name: Setup CodeQL
         uses: github/codeql-action/init@v2
         with:
           languages: ${{ matrix.language }}
+
       - name: Perform Analysis
         uses: github/codeql-action/analyze@v2
