@@ -1,7 +1,9 @@
 # Energy Price News API
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+
 [![All Contributors](https://img.shields.io/badge/all_contributors-5-orange.svg?style=flat-square)](#contributors-)
+
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 A project to create a public API that scrapes news sites for anything concerning the changes in energy prices.
@@ -44,7 +46,7 @@ npm run start
 ```
 
 - You may view the various endpoints by opening `localhost:8000` in your browser and appending the desired route
-  - e.g. `localhost:8000/news`
+  - e.g. `localhost:8000/api/news`
 
 ## Contribution
 
