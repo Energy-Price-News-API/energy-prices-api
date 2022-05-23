@@ -7,16 +7,27 @@ const { html } = require('cheerio/lib/static');
 const sources = require('../../data/sources.json');
 const articles = {};
 
+const getTitle = (value) => {
+    const altTitle = value[0].match(/(?<=alt=\\")(.*?)(?=\\")/g); // values if there's anything besides the title
+    if (altTitle == null) {
+        return value
+    } else if (altTitle.length >= 0) {
+        return altTitle
+    }
+}
+
 sources.forEach((source) => {
     axios.get(source.site).then((response) => {
       const html = response.data;
       const $ = cheerio.load(html);
   
       $('a:contains("energy")', html).each(function () {
-        const title = $(this)
-          .text()
-          .replace(/(\r\n|\n|\r)/gm, '')
-          .trim();
+        const title = getTitle(
+            $(this)
+            .text()
+            .replace(/(\r\n|\n|\r)/gm, "")
+            .trim()
+            );
         const url = $(this).attr('href');
         const sentences = title.split('...'); //splitting title by '...'
         const uniqueSentences = [...new Set(sentences)]; //Set will provide us with distinct values in array
@@ -55,10 +66,12 @@ const controller = {
             const singleSourceArticles = {};
 
             $('a:contains("energy")', html).each(function () {
-                const title = $(this)
-                .text()
-                .replace(/(\r\n|\n|\r)/gm, '')
-                .trim();
+                const title = getTitle(
+                    $(this)
+                    .text()
+                    .replace(/(\r\n|\n|\r)/gm, "")
+                    .trim()
+                    );
                 const url = $(this).attr('href');
                 const sentences = title.split('...'); //splitting title by '...'
                 const uniqueSentences = [...new Set(sentences)]; //Set will provide us with distinct values in array
