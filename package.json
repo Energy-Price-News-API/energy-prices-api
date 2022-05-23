@@ -2,10 +2,10 @@
   "name": "energy-prices-api",
   "version": "1.0.0",
   "description": "info tracking on energy prices",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
-    "start": "node index.js",
-    "dev": "nodemon index"
+    "start": "node app.js",
+    "dev": "nodemon app"
   },
   "author": "Sam Anglin <s.anglin@live.co.uk> (MizouziE)",
   "contributors": [
@@ -18,7 +18,8 @@
   "dependencies": {
     "axios": "^0.26.1",
     "cheerio": "^1.0.0-rc.10",
-    "express": "^4.17.3"
+    "express": "^4.17.3",
+    "path": "^0.12.7"
   },
   "engines": {
     "node": "16.x",
