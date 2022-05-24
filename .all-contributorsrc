@@ -73,6 +73,15 @@
         "code",
         "ideas"
       ]
+    },
+    {
+      "login": "dcordoba97",
+      "name": "Diego Cordoba",
+      "avatar_url": "https://avatars.githubusercontent.com/u/46203203?v=4",
+      "profile": "https://github.com/dcordoba97",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7
