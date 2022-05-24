@@ -1,11 +1,11 @@
 name: Documentation
 description: Request an update to invalid/outdated documentation
-title: '[DOC]'
+title: "[DOC] - <update description>"
 labels: [🚦 status: awaiting triage]
 body:
   - type: markdown
     attributes:
-      value: '# Incorrect Documentation'
+      value: "# Incorrect Documentation"
   - type: textarea
     id: doc_error_description
     attributes:
