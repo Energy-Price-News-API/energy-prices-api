@@ -40,7 +40,7 @@ npm install
 - Now the basis of the project is here and can already be viewed by running:
 
 ```ssh
-npm run start
+npm run dev
 ```
 
 - You may view the various endpoints by opening `localhost:8000` in your browser and appending the desired route
