@@ -8,9 +8,9 @@ const sources = require('../../data/sources.json');
 const articles = {};
 
 const getTitle = (value) => {
-    const altTitle = value[0].match(/(?<=alt=\\")(.*?)(?=\\")/g);
+    const altTitle = value.match(/alt=\"(.*?)\"/g);
     if (altTitle == null) return value;
-    return altTitle;
+    return altTitle[0].split('"')[1];
 }
 
 sources.forEach((source) => {
