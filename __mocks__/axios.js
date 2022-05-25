@@ -1,5 +1,5 @@
 module.exports = {
-  get: jest.fn().mockImplementationOnce(() =>
+  get: jest.fn(() =>
     Promise.resolve({
       data: `
         <!DOCTYPE html>

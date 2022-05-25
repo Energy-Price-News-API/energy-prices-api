@@ -15,16 +15,16 @@ sources.forEach(async (source) => {
       source: source.name,
     };
   } catch (error) {
-    console.error(error);
+    console.log({ error });
     return;
   }
 });
 
 const controller = {
-  news: (req, res) => {
+  getNews: (req, res) => {
     return res.json(articles);
   },
-  source: async (req, res) => {
+  getNewsBySource: async (req, res) => {
     const sourceId = req.params.sourceId;
     const singleSourceArticles = {};
 
@@ -50,7 +50,7 @@ const controller = {
 
       return res.json(singleSourceArticles);
     } catch (error) {
-      console.error(error);
+      console.log({ error });
       return;
     }
   },

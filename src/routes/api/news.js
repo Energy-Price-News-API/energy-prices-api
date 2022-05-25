@@ -1,8 +1,8 @@
 const express = require('express');
-const newsController = require('../../controller/api/newsAPIController');
+const controller = require('../../controller/api/newsAPIController');
 const router = express.Router();
 
-router.get('/', newsController.news);
-router.get('/:sourceId', newsController.source);
+router.get('/', controller.getNews);
+router.get('/:sourceId', controller.getNewsBySource);
 
 module.exports = router;
