@@ -14,6 +14,8 @@ app.use((req, res, next) => {
   res.status(404).sendFile(path.resolve('./views/not-found.html'));
 });
 
-app.listen(process.env.PORT || PORT, () =>
-  console.log(`server running on PORT ${PORT}`)
-);
+if (process.env.NODE_ENV !== 'test') {
+  app.listen(process.env.PORT || PORT, () =>
+    console.log(`server running on PORT ${PORT}`)
+  );
+}

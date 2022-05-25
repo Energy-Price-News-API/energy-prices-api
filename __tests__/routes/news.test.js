@@ -1,18 +1,18 @@
 const mockAxios = require('axios');
 const supertest = require('supertest');
-const { app } = require('../../src/app');
+const createServer = require('../../src/server');
 
+const app = createServer();
 const request = supertest(app);
 
-// jest.mock('axios');
+describe('News Api Route', () => {
+  beforeEach(() => mockAxios.get('_'));
 
-describe('News api route', () => {
   it('should return all the articles', async () => {
-    mockAxios.get();
-    // axios.get.mockImplementation(() => Promise.resolve(articles));
-
     const response = await request.get('/api/news');
+    expect(mockAxios.get).toHaveBeenCalledTimes(1);
+    console.log('Test response', response.text);
     expect(response.status).toBe(200);
-    expect(response.body).toMatchObject(articles);
+    expect(response.body).toBeTruthy();
   });
 });
