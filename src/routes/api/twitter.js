@@ -1,9 +1,7 @@
 const express = require('express');
+const twitterController = require('../../controller/api/twitterAPIController');
 const router = express.Router();
 
-const twitterController = require('../../controller/api/twitterAPIController');
-
-//ACCOUNTS
-router.get('/', twitterController.accounts)
+router.get('/', twitterController.accounts);
 
 module.exports = router;
