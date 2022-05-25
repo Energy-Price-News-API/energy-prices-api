@@ -4,8 +4,9 @@
   "description": "info tracking on energy prices",
   "main": "app.js",
   "scripts": {
-    "start": "node app.js",
-    "dev": "nodemon app"
+    "start": "node src/app",
+    "dev": "nodemon src/app.js",
+    "test": "jest --detectOpenHandles"
   },
   "author": "Sam Anglin <s.anglin@live.co.uk> (MizouziE)",
   "contributors": [
@@ -30,6 +31,8 @@
   },
   "devDependencies": {
     "all-contributors-cli": "^6.20.0",
-    "nodemon": "^2.0.16"
+    "jest": "^28.1.0",
+    "nodemon": "^2.0.16",
+    "supertest": "^6.2.3"
   }
 }
