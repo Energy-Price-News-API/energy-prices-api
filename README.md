@@ -1,7 +1,7 @@
 # Energy Price News API
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-7-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-8-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 A project to create a public API that scrapes news sites for anything concerning the changes in energy prices.
@@ -85,6 +85,9 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="https://www.linkedin.com/in/Yoshemith/"><img src="https://avatars.githubusercontent.com/u/87047389?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Yoshemith Castellanos Irribarren</b></sub></a><br /><a href="https://github.com/MizouziE/energy-prices-api/commits?author=Yoshemith" title="Code">💻</a> <a href="#ideas-Yoshemith" title="Ideas, Planning, & Feedback">🤔</a> <a href="#infra-Yoshemith" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a> <a href="#content-Yoshemith" title="Content">🖋</a> <a href="#design-Yoshemith" title="Design">🎨</a></td>
     <td align="center"><a href="https://github.com/dbsaw"><img src="https://avatars.githubusercontent.com/u/66219217?v=4?s=100" width="100px;" alt=""/><br /><sub><b>dbsaw</b></sub></a><br /><a href="https://github.com/MizouziE/energy-prices-api/commits?author=dbsaw" title="Code">💻</a> <a href="#ideas-dbsaw" title="Ideas, Planning, & Feedback">🤔</a></td>
     <td align="center"><a href="https://github.com/dcordoba97"><img src="https://avatars.githubusercontent.com/u/46203203?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Diego Cordoba</b></sub></a><br /><a href="https://github.com/MizouziE/energy-prices-api/commits?author=dcordoba97" title="Code">💻</a></td>
+  </tr>
+  <tr>
+    <td align="center"><a href="https://github.com/anu-codes"><img src="https://avatars.githubusercontent.com/u/96435434?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Anu</b></sub></a><br /><a href="https://github.com/MizouziE/energy-prices-api/commits?author=anu-codes" title="Documentation">📖</a></td>
   </tr>
 </table>
 

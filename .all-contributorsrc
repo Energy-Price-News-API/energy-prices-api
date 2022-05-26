@@ -82,6 +82,15 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "anu-codes",
+      "name": "Anu",
+      "avatar_url": "https://avatars.githubusercontent.com/u/96435434?v=4",
+      "profile": "https://github.com/anu-codes",
+      "contributions": [
+        "doc"
+      ]
     }
   ],
   "contributorsPerLine": 7
