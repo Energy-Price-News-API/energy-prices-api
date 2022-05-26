@@ -100,6 +100,15 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "rutterjt",
+      "name": "Jon Rutter",
+      "avatar_url": "https://avatars.githubusercontent.com/u/69657008?v=4",
+      "profile": "https://jonrutter.io/",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7
