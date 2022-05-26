@@ -91,6 +91,15 @@
       "contributions": [
         "doc"
       ]
+    },
+    {
+      "login": "NeffCodes",
+      "name": "James Neff",
+      "avatar_url": "https://avatars.githubusercontent.com/u/72764232?v=4",
+      "profile": "https://www.jamesneff.com/",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7
