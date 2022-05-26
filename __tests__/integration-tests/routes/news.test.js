@@ -1,6 +1,6 @@
 const mockAxios = require('axios');
 const supertest = require('supertest');
-const createServer = require('../../src/server');
+const createServer = require('../../../src/server');
 
 const app = createServer();
 const request = supertest(app);

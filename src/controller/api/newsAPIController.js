@@ -7,10 +7,10 @@ let articles = {};
 sources.forEach(async (source) => {
   try {
     const response = await axios.get(source.site);
-    const { url, filterTitle } = getDataFromCheerio(response.data);
+    const { url, title } = getDataFromCheerio(response.data);
 
     articles[url] = {
-      title: filterTitle,
+      title,
       url: source.base + url,
       source: source.name,
     };
@@ -40,10 +40,10 @@ const controller = {
 
     try {
       const response = await axios.get(sourceSite);
-      const { url, filterTitle } = getDataFromCheerio(response.data);
+      const { url, title } = getDataFromCheerio(response.data);
 
       singleSourceArticles[url] = {
-        title: filterTitle,
+        title,
         url: sourceBase + url,
         source: sourceName,
       };
