@@ -4,12 +4,12 @@ const getTitle = require('./getTitle');
 function getDataFromCheerio(html) {
   if (!html) throw new Error('There is nothing to load here');
 
-  let filterTitle = '';
+  let title = '';
   let url = '';
 
   const $ = cheerio.load(html);
   $('a:contains("energy")', html).each(function () {
-    const title = getTitle(
+    title = getTitle(
       $(this)
         .text()
         .replace(/(\r\n|\n|\r)/gm, '')
@@ -17,15 +17,9 @@ function getDataFromCheerio(html) {
     );
 
     url = $(this).attr('href');
-
-    //splitting title by '...'
-    const sentences = title.split('...');
-
-    //Set will provide us with distinct values in array
-    filterTitle = [...new Set(sentences)][0];
   });
 
-  return { url, filterTitle };
+  return { url, title };
 }
 
 module.exports = getDataFromCheerio;
