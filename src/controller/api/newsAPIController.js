@@ -1,7 +1,6 @@
 const axios = require('axios');
 const sources = require('../../data/sources.json');
 const getDataFromCheerio = require('../../utils/getDataFromCheerio');
-
 let articles = {};
 
 sources.forEach(async (source) => {
