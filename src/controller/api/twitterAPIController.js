@@ -1,21 +1,23 @@
 const axios = require('axios');
-
+const keywords = require('../../data/keywords');
 const twitterAccounts = require('../../data/accounts.json');
 const tweets = [];
 
-twitterAccounts.forEach(async (twitterAccount) => {
-  await axios.get(
-    'https://twitter.com/search?p=from%3A' +
-      twitterAccount.account +
-      '%20energy'
-  );
+keywords.forEach((keyword) => {
+  twitterAccounts.forEach(async (twitterAccount) => {
+    await axios.get(
+      'https://twitter.com/search?p=from%3A' +
+        twitterAccount.account +
+        `${keyword}`
+    );
 
-  tweets.push({
-    'See tweets from': '@' + twitterAccount.account,
-    link:
-      'https://twitter.com/search?q=from%3A' +
-      twitterAccount.account +
-      '%20energy',
+    tweets.push({
+      'See tweets from': '@' + twitterAccount.account,
+      link:
+        'https://twitter.com/search?q=from%3A' +
+        twitterAccount.account +
+        `${keyword}`,
+    });
   });
 });
 
