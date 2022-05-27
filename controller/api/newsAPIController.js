@@ -57,33 +57,33 @@ const controller = {
       (source) => source.name.toLowerCase().replace(/ /g, "") == sourceId
     )[0].name;
 
-    axios
-      .get(sourceSite)
-      .then((response) => {
-        const html = response.data;
-        const $ = cheerio.load(html);
-        const singleSourceArticles = {};
+    axios.get(sourceSite).then((response) => {
+      const html = response.data;
+      const $ = cheerio.load(html);
+      const singleSourceArticles = {};
+      keywords
+        .forEach((keyword) => {
+          $("a:contains('" + keyword + "')", html).each(function () {
+            const title = getTitle(
+              $(this)
+                .text()
+                .replace(/(\r\n|\n|\r)/gm, "")
+                .trim()
+            );
+            const url = $(this).attr("href");
+            const sentences = title.split("..."); //splitting title by '...'
+            const uniqueSentences = [...new Set(sentences)]; //Set will provide us with distinct values in array
 
-        $('a:contains("energy")', html).each(function () {
-          const title = getTitle(
-            $(this)
-              .text()
-              .replace(/(\r\n|\n|\r)/gm, "")
-              .trim()
-          );
-          const url = $(this).attr("href");
-          const sentences = title.split("..."); //splitting title by '...'
-          const uniqueSentences = [...new Set(sentences)]; //Set will provide us with distinct values in array
-
-          singleSourceArticles[url] = {
-            title: uniqueSentences[0],
-            url: sourceBase + url,
-            source: sourceName,
-          };
-        });
-        res.json(singleSourceArticles);
-      })
-      .catch((err) => console.log(err));
+            singleSourceArticles[url] = {
+              title: uniqueSentences[0],
+              url: sourceBase + url,
+              source: sourceName,
+            };
+          });
+          res.json(singleSourceArticles);
+        })
+        .catch((err) => console.log(err));
+    });
   },
 };
 
