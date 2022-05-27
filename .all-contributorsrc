@@ -140,6 +140,16 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "alesbe",
+      "name": "alesbe",
+      "avatar_url": "https://avatars.githubusercontent.com/u/30263316?v=4",
+      "profile": "https://github.com/alesbe",
+      "contributions": [
+        "code",
+        "bug"
+      ]
     }
   ],
   "contributorsPerLine": 7

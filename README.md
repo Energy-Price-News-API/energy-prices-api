@@ -1,7 +1,7 @@
 # Energy Price News API
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-13-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-14-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 A project to create a public API that scrapes news sites for anything concerning the changes in energy prices.
@@ -93,6 +93,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="https://github.com/cortezroberto"><img src="https://avatars.githubusercontent.com/u/69327429?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Roberto</b></sub></a><br /><a href="https://github.com/MizouziE/energy-prices-api/commits?author=cortezroberto" title="Code">💻</a> <a href="#ideas-cortezroberto" title="Ideas, Planning, & Feedback">🤔</a></td>
     <td align="center"><a href="https://www.linkedin.com/in/elmirismayilov/"><img src="https://avatars.githubusercontent.com/u/59176193?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Elmir Ismayilov</b></sub></a><br /><a href="https://github.com/MizouziE/energy-prices-api/commits?author=elmirsmylv" title="Code">💻</a></td>
     <td align="center"><a href="https://github.com/RamonASV"><img src="https://avatars.githubusercontent.com/u/104037313?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Ramón Soria</b></sub></a><br /><a href="https://github.com/MizouziE/energy-prices-api/commits?author=RamonASV" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/alesbe"><img src="https://avatars.githubusercontent.com/u/30263316?v=4?s=100" width="100px;" alt=""/><br /><sub><b>alesbe</b></sub></a><br /><a href="https://github.com/MizouziE/energy-prices-api/commits?author=alesbe" title="Code">💻</a> <a href="https://github.com/MizouziE/energy-prices-api/issues?q=author%3Aalesbe" title="Bug reports">🐛</a></td>
   </tr>
 </table>
 
