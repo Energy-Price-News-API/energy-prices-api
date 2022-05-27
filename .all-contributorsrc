@@ -39,7 +39,10 @@
         "ideas",
         "doc",
         "infra",
-        "tool"
+        "tool",
+        "research",
+        "review",
+        "question"
       ]
     },
     {
@@ -81,6 +84,43 @@
       "profile": "https://github.com/dcordoba97",
       "contributions": [
         "code"
+      ]
+    },
+    {
+      "login": "anu-codes",
+      "name": "Anu",
+      "avatar_url": "https://avatars.githubusercontent.com/u/96435434?v=4",
+      "profile": "https://github.com/anu-codes",
+      "contributions": [
+        "doc"
+      ]
+    },
+    {
+      "login": "NeffCodes",
+      "name": "James Neff",
+      "avatar_url": "https://avatars.githubusercontent.com/u/72764232?v=4",
+      "profile": "https://www.jamesneff.com/",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "rutterjt",
+      "name": "Jon Rutter",
+      "avatar_url": "https://avatars.githubusercontent.com/u/69657008?v=4",
+      "profile": "https://jonrutter.io/",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "cortezroberto",
+      "name": "Roberto",
+      "avatar_url": "https://avatars.githubusercontent.com/u/69327429?v=4",
+      "profile": "https://github.com/cortezroberto",
+      "contributions": [
+        "code",
+        "ideas"
       ]
     }
   ],

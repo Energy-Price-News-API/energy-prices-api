@@ -4,10 +4,11 @@
   "description": "info tracking on energy prices",
   "main": "app.js",
   "scripts": {
-    "start": "node app.js",
-    "dev": "nodemon app"
+    "start": "node src/app",
+    "dev": "nodemon src/app.js",
+    "test": "jest --detectOpenHandles"
   },
-  "author": "Sam Anglin <s.anglin@live.co.uk> (MizouziE)",
+  "author": "Sam Anglin <s.anglin@live.co.uk> (https://github.com/MizouziE)",
   "contributors": [
     "Soshun Esaki (https://github.com/OakenSushi)",
     "nulad (https://github.com/nulad)",
@@ -15,7 +16,11 @@
     "AyushiN (https://github.com/ANaphade)",
     "Yoshemith Castellanos Irribarren (https://github.com/Yoshemith)",
     "dbsaw (https://github.com/dbsaw)",
-    "Diego Cordoba (https://github.com/dcordoba97)"
+    "Diego Cordoba (https://github.com/dcordoba97)",
+    "Anu (https://github.com/anu-codes)",
+    "James Neff (https://github.com/NeffCodes)",
+    "Jon Rutter (https://github.com/rutterjt)",
+    "Roberto (https://github.com/cortezroberto)"
   ],
   "license": "MIT",
   "dependencies": {
@@ -30,6 +35,9 @@
   },
   "devDependencies": {
     "all-contributors-cli": "^6.20.0",
-    "nodemon": "^2.0.16"
+    "jest": "^28.1.0",
+    "nodemon": "^2.0.16",
+    "prettier": "2.6.2",
+    "supertest": "^6.2.3"
   }
 }
