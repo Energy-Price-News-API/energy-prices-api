@@ -5,8 +5,9 @@ const keywords = require('../../src/data/keywords');
 function getDataFromCheerio(html) {
   if (!html) throw new Error('There is nothing to load here');
 
-  let title = '';
-  let url = '';
+  // let title = '';
+  // let url = '';
+  let returnedArticles = [];
 
   const $ = cheerio.load(html);
   keywords.forEach((keyword) => {
@@ -19,10 +20,13 @@ function getDataFromCheerio(html) {
       );
 
       url = $(this).attr('href');
+
+      returnedArticles.push({"title": title, "url": url})
     });
   });
 
-  return { url, title };
+  console.log(returnedArticles)
+  return returnedArticles;
 }
 
 module.exports = getDataFromCheerio;
