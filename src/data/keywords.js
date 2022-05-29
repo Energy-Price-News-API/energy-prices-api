@@ -7,10 +7,10 @@ module.exports = keywords = [
   "renewable energy",
   "energy company",
   "energy tax",
-  "energy bill",
-  "energy resources",
-  "electricity bill",
-  "gas bill",
-  "electricity costs",
-  "energy"
+  "energy bill", // new
+  "energy resources", // new
+  "electricity bill", // new
+  "gas bill", // new
+  "electricity costs", // new
+  "energy" // new
 ];

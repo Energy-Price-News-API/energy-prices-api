@@ -7,10 +7,12 @@ function getDataFromCheerio(html) {
 
   // let title = '';
   // let url = '';
+
+  // Make an empty list
   let returnedArticles = [];
 
   const $ = cheerio.load(html);
-  keywords.forEach((keyword) => {
+  keywords.forEach((keyword) => { // search for each given keyword from keyword file/array
     $("a:contains('" + keyword + "')", html).each(function () {
       title = getTitle(
         $(this)
@@ -21,12 +23,11 @@ function getDataFromCheerio(html) {
 
       url = $(this).attr('href');
 
-      returnedArticles.push({"title": title, "url": url})
+      returnedArticles.push({"title": title, "url": url}) // add each page search results to list
     });
   });
 
-  console.log(returnedArticles)
-  return returnedArticles;
+  return returnedArticles; // return full list
 }
 
 module.exports = getDataFromCheerio;
