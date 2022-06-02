@@ -1,22 +1,26 @@
 const axios = require('axios');
 const sources = require('../../data/sources.json');
+const sc = require('short-crypt'); // new
 const getDataFromCheerio = require('../../utils/getDataFromCheerio');
 let articles = {};
 
 sources.forEach(async (source) => {
   try {
     const response = await axios.get(source.site);
-    const { url, title } = getDataFromCheerio(response.data);
+    const returnedArticles = getDataFromCheerio(response.data);
 
-    articles[url] = {
-      title,
-      url: source.base + url,
-      source: source.name,
-    };
-  } catch (error) {
-    console.log({ error });
-    return;
-  }
+    returnedArticles.forEach(async (returned) => { // now we have an array of multiple article's data to iterate through
+
+      articles[new sc(returned.url).encryptToQRCodeAlphanumeric(returned.url).slice(0, 10)] = { // use short-crypt to "hash" the url which works as unique ID
+        title: returned.title,
+        url: source.base + returned.url,
+        source: source.name,
+      };
+    })
+    } catch (error) {
+      console.log({ error });
+      return;
+    }
 });
 
 const controller = {

@@ -30,7 +30,8 @@
     "axios": "^0.26.1",
     "cheerio": "^1.0.0-rc.10",
     "express": "^4.17.3",
-    "express-rate-limit": "^6.4.0"
+    "express-rate-limit": "^6.4.0",
+    "short-crypt": "^1.0.25"
   },
   "engines": {
     "node": "16.x",
