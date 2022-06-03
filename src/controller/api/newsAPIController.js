@@ -15,6 +15,7 @@ sources.forEach(async (source) => {
         title: returned.title,
         url: source.base + returned.url,
         source: source.name,
+        image: returned.image
       };
     })
     } catch (error) {

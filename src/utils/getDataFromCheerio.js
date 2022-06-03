@@ -22,8 +22,9 @@ function getDataFromCheerio(html) {
       );
 
       url = $(this).attr('href');
+      ogImageLink = $.html().match(/<(?<Tag_Name>meta property="og:image)\b[^>]*?\b(?<URL_Type>(content))\s*=\s*(?:"(?<URL>(?:\\"|[^"])*)"|')/).groups.URL
 
-      returnedArticles.push({"title": title, "url": url}) // add each page search results to list
+      returnedArticles.push({"title": title, "url": url, "image": ogImageLink}) // add each page search results to list
     });
   });
 
