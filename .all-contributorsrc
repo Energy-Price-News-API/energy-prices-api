@@ -150,6 +150,15 @@
         "code",
         "bug"
       ]
+    },
+    {
+      "login": "kvaithin",
+      "name": "kvaithin",
+      "avatar_url": "https://avatars.githubusercontent.com/u/68995267?v=4",
+      "profile": "https://github.com/kvaithin",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7
