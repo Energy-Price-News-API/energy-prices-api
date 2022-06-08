@@ -23,7 +23,9 @@ function getDataFromCheerio(html) {
 
       url = $(this).attr('href');
 
-      returnedArticles.push({"title": title, "url": url}) // add each page search results to list
+      ogImageLink = $('head').find('meta[property*="og:image"]').attr('content') // returns og:image from parent site
+
+      returnedArticles.push({"title": title, "url": url, "image": ogImageLink}) // add each page search results to list
     });
   });
 
