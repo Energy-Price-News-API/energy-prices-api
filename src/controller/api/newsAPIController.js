@@ -1,7 +1,8 @@
 const axios = require('axios');
 const sources = require('../../data/sources.json');
-const sc = require('short-crypt'); // new
+const sc = require('short-crypt');
 const getDataFromCheerio = require('../../utils/getDataFromCheerio');
+const defaultImage = 'https://raw.githubusercontent.com/MizouziE/energy-prices-api/master/public/img/energy-prices-api-socials.png'
 let articles = {};
 
 sources.forEach(async (source) => {
@@ -15,7 +16,7 @@ sources.forEach(async (source) => {
         title: returned.title,
         url: source.base + returned.url,
         source: source.name,
-        image: returned.image
+        image: returned.image ?? defaultImage
       };
     })
     } catch (error) {
@@ -44,13 +45,17 @@ const controller = {
 
     try {
       const response = await axios.get(sourceSite);
-      const { url, title } = getDataFromCheerio(response.data);
+      const returnedArticlesSingle = getDataFromCheerio(response.data);
 
-      singleSourceArticles[url] = {
-        title,
-        url: sourceBase + url,
-        source: sourceName,
-      };
+      returnedArticlesSingle.forEach(async (returnedSingle) => {
+        singleSourceArticles[new sc(returnedSingle.url).encryptToQRCodeAlphanumeric(returnedSingle.url).slice(0, 10)] = {
+          title: returnedSingle.title,
+          url: sourceBase + returnedSingle.url,
+          source: sourceName,
+          image: returnedSingle.image ?? defaultImage
+        };
+      })
+
 
       return res.json(singleSourceArticles);
     } catch (error) {
