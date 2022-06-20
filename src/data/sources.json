@@ -20,6 +20,11 @@
     "base": ""
   },
   {
+    "name": "NewsBytes",
+    "site": "https://www.newsbytesapp.com/",
+    "base": ""
+  },
+  {
     "name": "BBC news",
     "site": "https://www.bbc.com/news/science-environment-56837908",
     "base": "https://www.bbc.com"
