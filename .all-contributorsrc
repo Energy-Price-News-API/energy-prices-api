@@ -214,6 +214,15 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "ianskie26",
+      "name": "Ian",
+      "avatar_url": "https://avatars.githubusercontent.com/u/81738932?v=4",
+      "profile": "https://public.tableau.com/app/profile/ian.luciano",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7
