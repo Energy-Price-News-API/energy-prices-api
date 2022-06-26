@@ -38,5 +38,25 @@
     "name": "Reuters",
     "site": "https://www.reuters.com/business/energy/",
     "base": "https://www.reuters.com"
+  },
+  {
+    "name": "CNN",
+    "site": "https://edition.cnn.com/",
+    "base": "" 
+  },
+  {
+    "name": "CNBC",
+    "site": "https://www.cnbc.com/world/",
+    "base": ""
+  },
+  {
+    "name": "Washington Post",
+    "site": "https://www.washingtonpost.com/",
+    "base": ""
+  },
+  {
+    "name": "ABC News",
+    "site": "https://abcnews.go.com/",
+    "base": ""
   }
 ]
