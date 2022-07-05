@@ -33,5 +33,10 @@
     "name": "Reuters",
     "site": "https://www.reuters.com/business/energy/",
     "base": "https://www.reuters.com"
+  },
+  {
+    "name": "Washington Post",
+    "site": "https://www.washingtonpost.com/energy/",
+    "base": "https://www.washingtonpost.com/"
   }
 ]
