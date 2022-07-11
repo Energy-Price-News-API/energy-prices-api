@@ -1,10 +1,11 @@
 const sources = require('../data/sources.json');
 const path = require('path');
-const eSources = sources.map((source) => source.name); //Existing sources
+const existingSources = sources.map((source) => source.name);
 
+//Finds sourceId match within existingSources, if not, return 404 page not found.
 function existingSourceMiddleware(req, res, next) {
   const sourceId = req.params.sourceId;
-  const sourceFound = eSources.filter(
+  const sourceFound = existingSources.filter(
     (source) => source.toLowerCase().replace(/ /g, '') === sourceId
   );
   if (sourceFound.length === 0) {
