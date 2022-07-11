@@ -2,7 +2,8 @@ const axios = require('axios');
 const sources = require('../../data/sources.json');
 const sc = require('short-crypt');
 const getDataFromCheerio = require('../../utils/getDataFromCheerio');
-const defaultImage = 'https://raw.githubusercontent.com/MizouziE/energy-prices-api/master/public/img/energy-prices-api-socials.png'
+const defaultImage =
+  'https://raw.githubusercontent.com/MizouziE/energy-prices-api/master/public/img/energy-prices-api-socials.png';
 let articles = {};
 
 sources.forEach(async (source) => {
@@ -10,19 +11,28 @@ sources.forEach(async (source) => {
     const response = await axios.get(source.site);
     const returnedArticles = getDataFromCheerio(response.data);
 
-    returnedArticles.forEach(async (returned) => { // now we have an array of multiple article's data to iterate through
+    returnedArticles.forEach(async (returned) => {
+      // now we have an array of multiple article's data to iterate through
+      if (source.name === 'CNN'&&!source.base.length) {
+        source.base='https://www.cnn.com';
+      }
 
-      articles[new sc(returned.url).encryptToQRCodeAlphanumeric(returned.url).slice(0, 10)] = { // use short-crypt to "hash" the url which works as unique ID
+      articles[
+        new sc(returned.url)
+          .encryptToQRCodeAlphanumeric(returned.url)
+          .slice(0, 10)
+      ] = {
+        // use short-crypt to "hash" the url which works as unique ID
         title: returned.title,
         url: source.base + returned.url,
         source: source.name,
-        image: returned.image ?? defaultImage
+        image: returned.image ?? defaultImage,
       };
-    })
-    } catch (error) {
-      console.log({ error });
-      return;
-    }
+    });
+  } catch (error) {
+    console.log({ error });
+    return;
+  }
 });
 
 const controller = {
@@ -48,14 +58,17 @@ const controller = {
       const returnedArticlesSingle = getDataFromCheerio(response.data);
 
       returnedArticlesSingle.forEach(async (returnedSingle) => {
-        singleSourceArticles[new sc(returnedSingle.url).encryptToQRCodeAlphanumeric(returnedSingle.url).slice(0, 10)] = {
+        singleSourceArticles[
+          new sc(returnedSingle.url)
+            .encryptToQRCodeAlphanumeric(returnedSingle.url)
+            .slice(0, 10)
+        ] = {
           title: returnedSingle.title,
           url: sourceBase + returnedSingle.url,
           source: sourceName,
-          image: returnedSingle.image ?? defaultImage
+          image: returnedSingle.image ?? defaultImage,
         };
-      })
-
+      });
 
       return res.json(singleSourceArticles);
     } catch (error) {
