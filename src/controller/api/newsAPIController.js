@@ -13,10 +13,6 @@ sources.forEach(async (source) => {
 
     returnedArticles.forEach(async (returned) => {
       // now we have an array of multiple article's data to iterate through
-      if (source.name === 'CNN'&&!source.base.length) {
-        source.base='https://www.cnn.com';
-      }
-
       articles[
         new sc(returned.url)
           .encryptToQRCodeAlphanumeric(returned.url)
