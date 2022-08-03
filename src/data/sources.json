@@ -58,5 +58,10 @@
     "name": "ABC News",
     "site": "https://abcnews.go.com/",
     "base": ""
+  },
+  {
+    "name": "The New York Times",
+    "site": "https://www.nytimes.com/section/business",
+    "base": ""
   }
 ]
