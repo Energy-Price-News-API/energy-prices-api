@@ -63,5 +63,15 @@
     "name": "The New York Times",
     "site": "https://www.nytimes.com/section/business",
     "base": ""
+  },
+  {
+    "name": "ABP News",
+    "site": "https://news.abplive.com/topic/energy-sector",
+    "base": ""
+  },
+  {
+    "name": "Zee News",
+    "site": "https://zeenews.india.com/tags/energy-sector.html",
+    "base": ""
   }
 ]
