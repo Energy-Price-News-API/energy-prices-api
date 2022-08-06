@@ -1,7 +1,7 @@
 # Energy Price News API
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-25-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-26-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 A project to create a public API that scrapes news sites for anything concerning the changes in energy prices.
@@ -109,6 +109,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="https://github.com/MuizU"><img src="https://avatars.githubusercontent.com/u/35157872?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Muiz Uvais</b></sub></a><br /><a href="https://github.com/MizouziE/energy-prices-api/commits?author=MuizU" title="Code">💻</a></td>
     <td align="center"><a href="https://github.com/scottjwilson"><img src="https://avatars.githubusercontent.com/u/35642678?v=4?s=100" width="100px;" alt=""/><br /><sub><b>scottjwilson</b></sub></a><br /><a href="https://github.com/MizouziE/energy-prices-api/commits?author=scottjwilson" title="Code">💻</a></td>
     <td align="center"><a href="https://github.com/k-puchala"><img src="https://avatars.githubusercontent.com/u/86025216?v=4?s=100" width="100px;" alt=""/><br /><sub><b>k-puchala</b></sub></a><br /><a href="https://github.com/MizouziE/energy-prices-api/commits?author=k-puchala" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/snehashish-ghosh98"><img src="https://avatars.githubusercontent.com/u/106345869?v=4?s=100" width="100px;" alt=""/><br /><sub><b>snehashish-ghosh98</b></sub></a><br /><a href="https://github.com/MizouziE/energy-prices-api/commits?author=snehashish-ghosh98" title="Code">💻</a></td>
   </tr>
 </table>
 
