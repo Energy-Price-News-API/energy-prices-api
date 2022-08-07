@@ -22,7 +22,10 @@ sources.forEach(async (source) => {
         title: returned.title,
         url: source.base + returned.url,
         source: source.name,
-        image: returned.image ?? defaultImage,
+        image:
+          !!returned.image && !!/^((http|https):\/\/)/.test(returned.image)
+            ? returned.image
+            : defaultImage,
       };
     });
   } catch (error) {
