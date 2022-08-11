@@ -31,7 +31,7 @@
   },
   {
     "name": "Sky news",
-    "site": "https://news.sky.com/climate",
+    "site": "https://news.sky.com/business",
     "base": "https://news.sky.com"
   },
   {
@@ -46,7 +46,7 @@
   },
   {
     "name": "CNBC",
-    "site": "https://www.cnbc.com/world/",
+    "site": "https://www.cnbc.com/energy/",
     "base": ""
   },
   {
