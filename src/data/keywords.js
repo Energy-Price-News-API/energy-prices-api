@@ -13,4 +13,6 @@ module.exports = keywords = [
   "gas bill", // new
   "electricity costs", // new
   "energy" // new
+  "gas prices" //new
+  "petrol prices" //new
 ];
