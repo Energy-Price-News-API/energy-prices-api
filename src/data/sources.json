@@ -6,7 +6,7 @@
   },
   {
     "name": "The Times",
-    "site": "https://www.thetimes.co.uk/#section-news",
+    "site": "https://www.thetimes.co.uk/environment",
     "base": "https://12ft.io/https://www.thetimes.co.uk"
   },
   {
@@ -51,7 +51,7 @@
   },
   {
     "name": "ABC News",
-    "site": "https://abcnews.go.com/",
+    "site": "https://abcnews.go.com/wn",
     "base": ""
   },
   {
