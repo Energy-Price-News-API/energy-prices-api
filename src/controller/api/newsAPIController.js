@@ -22,10 +22,9 @@ sources.forEach(async (source) => {
         title: returned.title,
         url: source.base + returned.url,
         source: source.name,
-        image:
-          !!returned.image && !!/^((http|https):\/\/)/.test(returned.image)
-            ? returned.image
-            : defaultImage,
+        image: /^((http|https):\/\/)/.test(returned.image)
+          ? returned.image
+          : defaultImage,
       };
     });
   } catch (error) {
@@ -65,7 +64,9 @@ const controller = {
           title: returnedSingle.title,
           url: sourceBase + returnedSingle.url,
           source: sourceName,
-          image: returnedSingle.image ?? defaultImage,
+          image: /^((http|https):\/\/)/.test(returnedSingle.image)
+            ? returnedSingle.image
+            : defaultImage,
         };
       });
 
