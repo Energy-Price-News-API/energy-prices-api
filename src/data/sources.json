@@ -68,5 +68,10 @@
     "name": "Zee News",
     "site": "https://zeenews.india.com/tags/energy-sector.html",
     "base": "https://zeenews.india.com"
+  },
+  {
+    "name": "The Economic Times",
+    "site": "https://economictimes.indiatimes.com/industry/energy",
+    "base": "https://economictimes.indiatimes.com/"
   }
 ]
