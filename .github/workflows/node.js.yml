@@ -28,3 +28,6 @@ jobs:
         cache: 'npm'
     - run: npm ci --if-present
     - run: npm test --if-present
+
+    - name: Deploy GitHub Pages site
+      uses: actions/deploy-pages@v1.0.10
