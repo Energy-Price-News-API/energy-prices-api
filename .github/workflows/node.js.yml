@@ -32,7 +32,7 @@ jobs:
       uses: actions/upload-artifact@v3
       with:
           name: github-pages
-          path: path/**/[abc]rtifac?/* # or path/to/artifact
+          path: ../../../. # or path/to/artifact
 
 
   deploy:
