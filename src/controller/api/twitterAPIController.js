@@ -1,6 +1,7 @@
 const axios = require('axios');
 const keywords = require('../../data/keywords');
 const twitterAccounts = require('../../data/accounts.json');
+const filterKeyword = require('../../utils/filterKeyword');
 const tweets = [];
 
 keywords.forEach((keyword) => {
@@ -8,7 +9,7 @@ keywords.forEach((keyword) => {
     await axios.get(
       'https://twitter.com/search?p=from%3A' +
         twitterAccount.account +
-        `${keyword}`
+        `${filterKeyword(keyword)}`
     );
 
     tweets.push({
@@ -16,7 +17,7 @@ keywords.forEach((keyword) => {
       link:
         'https://twitter.com/search?q=from%3A' +
         twitterAccount.account +
-        `${keyword}`,
+        `${filterKeyword(keyword)}`,
     });
   });
 });
