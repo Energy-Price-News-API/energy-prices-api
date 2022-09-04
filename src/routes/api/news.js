@@ -5,6 +5,7 @@ const router = express.Router();
 const existingSourceMiddleware = require('../../middlewares/existingSourceMiddleware');
 
 router.get('/', controller.getNews);
+router.get('/sources', controller.getSources);
 router.get('/:sourceId', existingSourceMiddleware, controller.getNewsBySource);
 
 module.exports = router;
