@@ -2,76 +2,91 @@
   {
     "name": "The Guardian",
     "site": "https://www.theguardian.com/uk/money",
-    "base": "https://12ft.io/"
+    "base": "https://12ft.io/",
+    "region":"Europe"
   },
   {
     "name": "The Times",
     "site": "https://www.thetimes.co.uk/environment",
-    "base": "https://12ft.io/https://www.thetimes.co.uk"
+    "base": "https://12ft.io/https://www.thetimes.co.uk",
+    "region":""
   },
   {
     "name": "The Telegraph",
     "site": "https://www.telegraph.co.uk/money/",
-    "base": "https://12ft.io/https://www.telegraph.co.uk"
+    "base": "https://12ft.io/https://www.telegraph.co.uk",
+    "region":""
   },
   {
     "name": "Metro UK",
     "site": "https://metro.co.uk/news/uk/",
-    "base": ""
+    "base": "",
+    "region":""
   },
   {
     "name": "NewsBytes",
     "site": "https://www.newsbytesapp.com/",
-    "base": ""
+    "base": "",
+    "region":"Asia"
   },
   {
     "name": "BBC news",
     "site": "https://www.bbc.com/news/science-environment-56837908",
-    "base": "https://www.bbc.com"
+    "base": "https://www.bbc.com",
+    "region":""
   },
   {
     "name": "Sky news",
     "site": "https://news.sky.com/business",
-    "base": "https://news.sky.com"
+    "base": "https://news.sky.com",
+    "region":""
   },
   {
     "name": "Reuters",
     "site": "https://www.reuters.com/business/energy/",
-    "base": "https://www.reuters.com"
+    "base": "https://www.reuters.com",
+    "region":""
   },
   {
     "name": "CNN",
     "site": "https://edition.cnn.com/business",
-    "base": "https://edition.cnn.com"
+    "base": "https://edition.cnn.com",
+    "region":"Americas"
   },
   {
     "name": "CNBC",
     "site": "https://www.cnbc.com/energy/",
-    "base": ""
+    "base": "",
+    "region":""
   },
   {
     "name": "ABC News",
     "site": "https://abcnews.go.com/wn",
-    "base": ""
+    "base": "",
+    "region":""
   },
   {
     "name": "The New York Times",
     "site": "https://www.nytimes.com/section/business",
-    "base": ""
+    "base": "",
+    "region":""
   },
   {
     "name": "ABP News",
     "site": "https://news.abplive.com/topic/energy-sector",
-    "base": ""
+    "base": "",
+    "region":""
   },
   {
     "name": "Zee News",
     "site": "https://zeenews.india.com/tags/energy-sector.html",
-    "base": "https://zeenews.india.com"
+    "base": "https://zeenews.india.com",
+    "region":""
   },
   {
     "name": "The Economic Times",
     "site": "https://economictimes.indiatimes.com/industry/energy",
-    "base": "https://economictimes.indiatimes.com/"
+    "base": "https://economictimes.indiatimes.com/",
+    "region":""
   }
 ]
