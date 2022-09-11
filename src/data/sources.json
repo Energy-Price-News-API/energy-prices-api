@@ -9,19 +9,19 @@
     "name": "The Times",
     "site": "https://www.thetimes.co.uk/environment",
     "base": "https://12ft.io/https://www.thetimes.co.uk",
-    "region":""
+    "region":"Europe"
   },
   {
     "name": "The Telegraph",
     "site": "https://www.telegraph.co.uk/money/",
     "base": "https://12ft.io/https://www.telegraph.co.uk",
-    "region":""
+    "region":"Europe"
   },
   {
     "name": "Metro UK",
     "site": "https://metro.co.uk/news/uk/",
     "base": "",
-    "region":""
+    "region":"Europe"
   },
   {
     "name": "NewsBytes",
@@ -33,19 +33,19 @@
     "name": "BBC news",
     "site": "https://www.bbc.com/news/science-environment-56837908",
     "base": "https://www.bbc.com",
-    "region":""
+    "region":"Americas"
   },
   {
     "name": "Sky news",
     "site": "https://news.sky.com/business",
     "base": "https://news.sky.com",
-    "region":""
+    "region":"Europe"
   },
   {
     "name": "Reuters",
     "site": "https://www.reuters.com/business/energy/",
     "base": "https://www.reuters.com",
-    "region":""
+    "region":"Europe"
   },
   {
     "name": "CNN",
@@ -57,36 +57,36 @@
     "name": "CNBC",
     "site": "https://www.cnbc.com/energy/",
     "base": "",
-    "region":""
+    "region":"Europe"
   },
   {
     "name": "ABC News",
     "site": "https://abcnews.go.com/wn",
     "base": "",
-    "region":""
+    "region":"Americas"
   },
   {
     "name": "The New York Times",
     "site": "https://www.nytimes.com/section/business",
     "base": "",
-    "region":""
+    "region":"Americas"
   },
   {
     "name": "ABP News",
     "site": "https://news.abplive.com/topic/energy-sector",
     "base": "",
-    "region":""
+    "region":"Asia"
   },
   {
     "name": "Zee News",
     "site": "https://zeenews.india.com/tags/energy-sector.html",
     "base": "https://zeenews.india.com",
-    "region":""
+    "region":"Asia"
   },
   {
     "name": "The Economic Times",
     "site": "https://economictimes.indiatimes.com/industry/energy",
     "base": "https://economictimes.indiatimes.com/",
-    "region":""
+    "region":"Asia"
   }
 ]
