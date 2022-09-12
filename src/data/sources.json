@@ -33,7 +33,7 @@
     "name": "BBC news",
     "site": "https://www.bbc.com/news/science-environment-56837908",
     "base": "https://www.bbc.com",
-    "region":"Americas"
+    "region":"Europe"
   },
   {
     "name": "Sky news",
@@ -57,7 +57,7 @@
     "name": "CNBC",
     "site": "https://www.cnbc.com/energy/",
     "base": "",
-    "region":"Europe"
+    "region":"Americas"
   },
   {
     "name": "ABC News",
