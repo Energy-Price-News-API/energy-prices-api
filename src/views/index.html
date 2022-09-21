@@ -1,107 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta
-      property="og:image"
-      content="https://github.com/MizouziE/energy-prices-api/blob/6f1a91d79f2da16da4ccbc3b86ad6b0d7134606a/public/img/energy-prices-api-socials.png"
-    />
+
+<head>
+    <meta property="og:image" content="https://github.com/MizouziE/energy-prices-api/blob/6f1a91d79f2da16da4ccbc3b86ad6b0d7134606a/public/img/energy-prices-api-socials.png" />
     <meta property="og:image:width" content="640" />
     <meta property="og:image:height" content="321" />
     <meta property="og:title" content="Energy Prices API" />
-    <meta
-      property="og:description"
-      content="A news site scraping API with a few different endpoints that provide links to articles related to energy prices"
-    />
+    <meta property="og:description" content="A news site scraping API with a few different endpoints that provide links to articles related to energy prices" />
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="Energy Prices API" />
-    <meta
-      property="og:url"
-      content="https://energy-price-news-api.herokuapp.com/"
-    />
+    <meta property="og:url" content="https://energy-price-news-api.herokuapp.com/" />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Energy Price News tracker API</title>
-    <script
-      src="https://kit.fontawesome.com/12e8dd5695.js"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://kit.fontawesome.com/12e8dd5695.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="/css/styles.css" />
-  </head>
-  <body>
+</head>
+
+<body>
     <nav>
-      <div class="logo">
-        <a href="/"><img src="/img/logo.png" alt="logo" /></a>
-      </div>
-      <input type="checkbox" id="click" />
-      <label for="click" class="menu-btn">
+        <div class="logo">
+            <a href="/"><img src="/img/logo.png" alt="logo" /></a>
+        </div>
+        <input type="checkbox" id="click" />
+        <label for="click" class="menu-btn">
         <i class="fas fa-bars"></i>
       </label>
-      <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="/api/news">API</a></li>
-        <li>
-          <a href="https://github.com/MizouziE/energy-prices-api">Docs</a>
-        </li>
-        <li>
-          <a href="https://github.com/MizouziE/energy-prices-api">About</a>
-        </li>
-      </ul>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/api/news">API</a></li>
+            <li>
+                <a href="https://github.com/MizouziE/energy-prices-api">Docs</a>
+            </li>
+            <li>
+                <a href="https://github.com/MizouziE/energy-prices-api">About</a>
+            </li>
+        </ul>
     </nav>
     <main>
-      <article>
-        <h2>What is this?</h2>
-        <p>
-          A news site scraping API with a few different endpoints that provide
-          links to articles related to energy prices.
-        </p>
-        <p>
-          This project's secondary aim is to help beginners learn how to
-          contribute to open source projects and will be purposely kept as basic
-          as possible.
-        </p>
-      </article>
-      <article>
-        <h2>Planned Features</h2>
-        <ul>
-          <li>Links to articles</li>
-          <li>End points for specific sources</li>
-          <li>Thorough documentation</li>
-          <li>
-            An open and inviting issue-board to encourage discussion of future
-            features
-          </li>
-        </ul>
-      </article>
-      <article>
-        <h2>Try it now!</h2>
-        <p>
-          Access to the
-          <a
-            href="https://github.com/MizouziE/energy-prices-api/blob/master/README.md"
-            >documentation.</a
+        <article>
+            <h2>What is this?</h2>
+            <p>
+                A news site scraping API with a few different endpoints that provide links to articles related to energy prices.
+            </p>
+            <p>
+                This project's secondary aim is to help beginners learn how to contribute to open source projects and will be purposely kept as basic as possible.
+            </p>
+        </article>
+        <article>
+            <h2>Planned Features</h2>
+            <ul>
+                <li>Links to articles</li>
+                <li>End points for specific sources</li>
+                <li>Thorough documentation</li>
+                <li>
+                    An open and inviting issue-board to encourage discussion of future features
+                </li>
+            </ul>
+        </article>
+        <article>
+            <h2>Try it now!</h2>
+            <p>
+                Access to the
+                <a href="https://github.com/MizouziE/energy-prices-api/blob/master/README.md">documentation.</a
           >
         </p>
         <ul>
           <li>
             Endpoint to the News data results -> <a href="/api/news">here!</a>
-          </li>
-          <li>
-            Endpoint to the Twitter sources results ->
-            <a href="/api/twitter">here!</a>
-          </li>
-        </ul>
-      </article>
-      <article>
-        <h2>Sample front end</h2>
+                </li>
+                <li>
+                    Endpoint to the News sources results ->
+                    <a href="/api/news/sources">here!</a>
+                </li>
+                <li>
+                    Endpoint to the News Region results ->
+                    <a href="/api/news/regions">here!</a>
+                </li>
+                <li>
+                    Endpoint to the News Region(id) results ->
+                    <a href="/api/news/regions/:id">here!</a>
+                </li>
+                <!-- <li>
+                    Endpoint to the Twitter sources results ->
+                    <a href="/api/twitter">here!</a>
+                </li> -->
+                </ul>
+        </article>
+        <article>
+            <h2>Sample front end</h2>
 
-        <a href="https://epa-frontend.vercel.app">
+            <a href="https://epa-frontend.vercel.app">
           Here you can find a sample website consuming the data.</a
         >
       </article>
@@ -110,11 +103,8 @@
       <div class="container">
         <p>
           Check out the official repo
-          <a href="https://github.com/MizouziE/energy-prices-api/">here!</a>
-          It's also available on
-          <a
-            href="https://rapidapi.com/sanglin-TlEqlfGPc/api/energy-price-news/"
-            >RapidAPI.</a
+          <a href="https://github.com/MizouziE/energy-prices-api/">here!</a> It's also available on
+            <a href="https://rapidapi.com/sanglin-TlEqlfGPc/api/energy-price-news/">RapidAPI.</a
           >
         </p>
         <ul class="media-icons">
@@ -122,21 +112,19 @@
             <a href="https://github.com/MizouziE/energy-prices-api/issues"
               ><i class="fa-solid fa-code-fork"></i
             ></a>
-          </li>
-          <li>
-            <a href="https://github.com/MizouziE/energy-prices-api"
-              ><i class="fab fa-github"></i
+            </li>
+            <li>
+                <a href="https://github.com/MizouziE/energy-prices-api"><i class="fab fa-github"></i
             ></a>
-          </li>
-          <li>
-            <a
-              href="https://github.com/MizouziE/energy-prices-api/blob/master/README.md"
-              ><i class="fa-solid fa-code-pull-request"></i
+            </li>
+            <li>
+                <a href="https://github.com/MizouziE/energy-prices-api/blob/master/README.md"><i class="fa-solid fa-code-pull-request"></i
             ></a>
-          </li>
-        </ul>
-        <p>&copy; 2022 energy prices api</p>
-      </div>
-    </footer>
-  </body>
+            </li>
+            </ul>
+            <p>&copy; 2022 energy prices api</p>
+            </div>
+            </footer>
+</body>
+
 </html>
