@@ -33,7 +33,6 @@ const pagination = (req,res,model)=>{
       results.pages = totalPages
       results.limit = limit;
       results.currentPage = page;
-      console.log(results)
       results.results = Object.fromEntries(Object.entries(model).slice(startIndex,lastIndex));
       return results;
   }
