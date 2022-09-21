@@ -4,6 +4,7 @@ const regions = require('../../data/regions.json');
 const sc = require('short-crypt');
 const getDataFromCheerio = require('../../utils/getDataFromCheerio');
 const getSourceImageFromCheerio = require('../../utils/getSourceImageFromCheerio');
+const pagination = require('../../utils/paginate');
 const defaultImage =
   'https://raw.githubusercontent.com/MizouziE/energy-prices-api/master/public/img/energy-prices-api-socials.png';
 let articles = {};
@@ -35,6 +36,8 @@ sources.forEach(async (source) => {
   }
 });
 
+
+
 const sourceObject = async(source,baseUrl)=>{
   const response = await axios.get(source.site);
   const sourceImageLink =   getSourceImageFromCheerio( response.data); // image link for each source
@@ -50,6 +53,9 @@ const sourceObject = async(source,baseUrl)=>{
 
 const controller = {
   getNews: (req, res) => {
+    if (parseInt(req.query.page))
+    {const paginatedArticles = pagination(req,res,articles);
+    return res.json(paginatedArticles)}
     return res.json(articles);
   },
   getNewsBySource: async (req, res) => {
@@ -84,7 +90,9 @@ const controller = {
             : defaultImage,
         };
       });
-
+      if (parseInt(req.query.page))
+      {const paginatedArticles = pagination(req,res,singleSourceArticles);
+    return res.json(paginatedArticles)}
       return res.json(singleSourceArticles);
     } catch (error) {
       console.log({ error });
@@ -113,6 +121,9 @@ const controller = {
               console.log({error });
                 }
       }
+      if (parseInt(req.query.page))
+      {const paginatedArticles = pagination(req,res,sourcesWithEndPoint);
+      return res.json(paginatedArticles)}
     return   res.json( sourcesWithEndPoint);
     } ,
   
@@ -129,6 +140,9 @@ const controller = {
            url: hosturl + apipath + `/${region.name.toLowerCase().replace(/ /g, '')}`
             } ;
           })
+      if (parseInt(req.query.page))
+          {const paginatedRegions = pagination(req,res,regionsWithEndPoint);
+          return res.json(paginatedRegions)}
     return res.json(regionsWithEndPoint);    
   } ,
   
@@ -156,6 +170,9 @@ const controller = {
             console.log({error });
               }
     }
+    if (parseInt(req.query.page))
+    {const paginatedSourcesByRegion = pagination(req,res,sourcesByRegion);
+    return res.json(paginatedSourcesByRegion)}
     return res.json(sourcesByRegion);      
   }
 };
