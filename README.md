@@ -24,9 +24,12 @@ This project was first thought up after watching [this video](https://www.youtub
 ## Language & Prerequisites
 
 - Javascript primarily, therefore:
-  - [Node.js](https://nodejs.org)
+  - [Node.js >v16](https://nodejs.org)
   - [NPM](https://npmjs.org)
 - A browser extension for viewing JSON is helpful like [JSON Formatter](https://chrome.google.com/webstore/detail/json-formatter/bcjindcccaagfpapjjmafapmmgkkhgoa?hl=en)
+
+> **Warning**
+> The above mentioned Node version is important to be able to run this project properly as it makes use of some newer functions. Also, if you are not using linux, the JSON formatter browser extension is **HIGHLY** recommended.
 
 ## Installation
 
