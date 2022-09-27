@@ -1,7 +1,7 @@
 # Energy Price News API
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-32-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-34-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 A project to create a public API that scrapes news sites for anything concerning the changes in energy prices.
@@ -24,9 +24,12 @@ This project was first thought up after watching [this video](https://www.youtub
 ## Language & Prerequisites
 
 - Javascript primarily, therefore:
-  - [Node.js](https://nodejs.org)
+  - [Node.js >v16](https://nodejs.org)
   - [NPM](https://npmjs.org)
 - A browser extension for viewing JSON is helpful like [JSON Formatter](https://chrome.google.com/webstore/detail/json-formatter/bcjindcccaagfpapjjmafapmmgkkhgoa?hl=en)
+
+> **Warning**
+> The above mentioned Node version is important to be able to run this project properly as it makes use of some newer functions. Also, if you are not using linux, the JSON formatter browser extension is **HIGHLY** recommended.
 
 ## Installation
 
@@ -118,6 +121,8 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="https://github.com/KetanParmar07"><img src="https://avatars.githubusercontent.com/u/110761080?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Ketan Parmar</b></sub></a><br /><a href="https://github.com/MizouziE/energy-prices-api/commits?author=KetanParmar07" title="Code">💻</a></td>
     <td align="center"><a href="https://github.com/zadilkhwaja"><img src="https://avatars.githubusercontent.com/u/46615169?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Z Adil Khwaja</b></sub></a><br /><a href="https://github.com/MizouziE/energy-prices-api/commits?author=zadilkhwaja" title="Code">💻</a></td>
     <td align="center"><a href="https://github.com/MuminAhmadKhan"><img src="https://avatars.githubusercontent.com/u/63766734?v=4?s=100" width="100px;" alt=""/><br /><sub><b>MuminAhmadKhan</b></sub></a><br /><a href="https://github.com/MizouziE/energy-prices-api/commits?author=MuminAhmadKhan" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/TeaBizzy"><img src="https://avatars.githubusercontent.com/u/111951212?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Stefan Talbot</b></sub></a><br /><a href="https://github.com/MizouziE/energy-prices-api/commits?author=TeaBizzy" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/Dev79844"><img src="https://avatars.githubusercontent.com/u/51128342?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Dev Parikh</b></sub></a><br /><a href="https://github.com/MizouziE/energy-prices-api/commits?author=Dev79844" title="Code">💻</a></td>
   </tr>
 </table>
 
