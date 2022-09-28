@@ -88,5 +88,17 @@
     "site": "https://economictimes.indiatimes.com/industry/energy",
     "base": "https://economictimes.indiatimes.com/",
     "region":"Asia"
+  },
+  {
+    "name": "The Globe And Mail",
+    "site": "https://www.theglobeandmail.com/business/industry-news/energy-and-resources/",
+    "base": "https://www.theglobeandmail.com/",
+    "region":"Americas"
+  },
+  {
+    "name": "Euronews",
+    "site": "https://www.euronews.com/",
+    "base": "",
+    "region":"Europe"
   }
 ]
