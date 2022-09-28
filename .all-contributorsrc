@@ -42,7 +42,8 @@
         "tool",
         "research",
         "review",
-        "question"
+        "question",
+        "maintenance"
       ]
     },
     {
@@ -321,7 +322,8 @@
       "avatar_url": "https://avatars.githubusercontent.com/u/111951212?v=4",
       "profile": "https://github.com/TeaBizzy",
       "contributions": [
-        "code"
+        "code",
+        "ideas"
       ]
     },
     {
@@ -331,6 +333,16 @@
       "profile": "https://github.com/Dev79844",
       "contributions": [
         "code"
+      ]
+    },
+    {
+      "login": "pwill12",
+      "name": "Will12",
+      "avatar_url": "https://avatars.githubusercontent.com/u/72789027?v=4",
+      "profile": "https://github.com/pwill12",
+      "contributions": [
+        "code",
+        "example"
       ]
     }
   ],
