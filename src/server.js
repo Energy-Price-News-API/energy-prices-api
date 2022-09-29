@@ -19,7 +19,7 @@ function createServer() {
   app.use(express.static('public'));
   app.use('/', main);
   app.use('/api/news', apiNews);
-  app.use('/api/twitter', apiTwitter);
+//  app.use('/api/twitter', apiTwitter);
   app.use((req, res, next) => {
     res.status(404).sendFile(path.resolve('./src/views/not-found.html'));
   });
