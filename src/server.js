@@ -2,7 +2,7 @@ const path = require('path');
 const express = require('express');
 const main = require('./routes/main');
 const apiNews = require('./routes/api/news');
-const apiTwitter = require('./routes/api/twitter');
+// const apiTwitter = require('./routes/api/twitter');
 const rateLimit = require('express-rate-limit');
 
 function createServer() {
