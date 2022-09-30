@@ -52,11 +52,12 @@ Working on your first Pull Request? You can learn how for *free* by checking [th
 ### A quick walkthrough of how to submit a contribution.
 
 For something that is bigger than a one or two line fix:
-1. Create your own fork of the code
+1. Create your own fork of the code [(detailed below)](#how-to-make-a-fork)
 2. Do the changes in your fork
 3. If you like the change and think the project could use it:
     * Try to follow the code style for the project
     * Note our Code of Conduct.
+    * Try to follow [our commit message style](#commit-message-style)
     * Send a pull request.
 
 > **Note**
@@ -65,7 +66,103 @@ For something that is bigger than a one or two line fix:
 >At this point, you're ready to make your changes! Feel free to ask for help; everyone is a beginner at first :smile_cat:
 >
 >If a maintainer asks you to "rebase" your PR, they're saying that a lot of code has changed, and that you need to update your branch so it's easier to merge.
-### If you have a small or "obvious" fix, you may also...
+
+## How to make a fork
+
+**1.** Start by making a Fork of the project repository. Click on the <a href="https://github.com/Energy-Price-News-API/energy-prices-api/fork"><img src="https://i.imgur.com/G4z1kEe.png" height="21" width="21"></a>Fork symbol at the top right corner.
+
+**2.** Clone your new fork of the repository in the terminal/CLI on your computer with the following command:
+
+```bash
+git clone https://github.com/<your-github-username>/energy-prices-api
+```
+
+**3.** Navigate to the newly created energy-prices-api project directory:
+
+```bash
+cd energy-prices-api
+```
+
+**4.** Set upstream command:
+
+```bash
+git remote add upstream https://github.com/Energy-Price-News-API/energy-prices-api.git
+```
+
+**5.** Create a new branch:
+
+```bash
+git checkout -b <your-branch-name>
+```
+
+**6.** Sync your fork or your local repository with the origin repository:
+
+- In your forked repository, click on "Fetch upstream"
+- Click "Fetch and merge"
+
+### Alternatively, Git CLI way to Sync forked repository with origin repository:
+
+```bash
+git fetch upstream
+```
+
+```bash
+git merge upstream/main
+```
+
+### [Github Docs](https://docs.github.com/en/github/collaborating-with-pull-requests/addressing-merge-conflicts/resolving-a-merge-conflict-on-github) for Syncing
+
+**7.** Make your changes to the source code.
+
+**8.** Stage your changes:
+
+⚠️ **Make sure** not to commit `package.json` or `package-lock.json` file
+
+⚠️ **Make sure** not to run the commands `git add .` or `git add *`
+
+> Instead, stage your changes for each file/folder
+>
+> By using public path it means it will add all files and folders under that folder, it is better to be specific
+```bash
+git add public
+```
+
+_or_
+
+```bash
+git add "<files_you_have_changed>"
+```
+
+**9.** Commit your changes:
+
+```bash
+git commit -m "<your_commit_message>"
+```
+
+**10.** Push your local commits to the remote repository:
+
+```bash
+git push origin <your-branch-name>
+```
+
+**11.** Create a [Pull Request](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request)!
+
+**12.** **Congratulations!** You've made your first contribution! 🙌🏼
+
+[source: EddieHubCommunity - LinkFree](https://github.com/EddieHubCommunity/LinkFree/blob/main/CONTRIBUTING.md?plain=1)
+
+## Commit message style
+
+To try and keep thinks running as smoothly as possible, we ask that you do your best to stick to conventional commit messages.
+
+[Full details can be found here](https://www.conventionalcommits.org/en/v1.0.0/#summary)
+
+**TLDR**: 
+- be descriptive but concise
+- reference the issue addressed by ID
+- mention fix/feat/doc or whatever applies
+
+## If you have a small or "obvious" fix, you may also...
 
 Small contributions such as fixing spelling errors, where the content is small enough to not be considered intellectual property, can be submitted by a contributor as a patch, without a CLA.
 
