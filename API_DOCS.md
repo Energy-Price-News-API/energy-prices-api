@@ -94,23 +94,61 @@ This endpoint will give a list of regions that we currently have sources from. E
 In the above example, you will see page 1 with the first 8 results, plus a link to the next page (page 2) plus a list of other details tht are described below.
 
 Here is the necessary information regaridng the pagination feature:
-By adding query parameters `page` and `limit` any route can be paginated.
+By adding query parameters `page=` and `limit=` any route can be paginated.
 
-The `page` parameter is necessary while `limit` is optional and by default set at 5.
+The `page=` parameter is necessary while `limit=` is optional and by default set at 5.
 
 If neither of the parameters are passed, a list of results are returned, otherwise
 a list of the following format is returned:
 ```json
 {
-	previous: link to the previous page if it exists,
-	next : link to the next page if it exists ,
-	total : the numbers of total items for that route ,
-	pages : the total number of pages (total/limit),
-	limit : the number of object to be returned in results,
-	currentPage: current page number,
-	results : {
-		//* a list of results, length being equal to the limit set */
+	"previous": "link to the previous page if it exists", // http://localhost:8000/api/news...
+	"next" : "link to the next page if it exists ", // http://localhost:8000/api/news...
+	"total" : "the numbers of total items for that route ", // 47
+	"pages" : "the total number of pages (total/limit)", // 5
+	"limit" : "the number of object to be returned in results", // 9
+	"currentPage": "current page number", // 3
+	"results" : {
+		"a list of results, length being equal to the limit set" // the articles listed in the usual way
 	}
 }
 ```
+### Truncation of Article Titles
 
+[/api/news/zeenews?trunc=25](http://localhost:8000/api/news/zeenews?trunc=25)
+
+As some of the returned articles can have excessively long titles which may interfere with some frontend apps layout, it is possible to truncate (or clip) the titles returned by the API calls.
+
+By specifying the query parameter `trunc=` you may choose the integer value max character length of the titles returned. An ellipsis (...) will be appended automatically to indicate that it is truncated, so please consider the extra 3 characters if your usage is very length specific.
+
+A default minimum of 10 characters is set to prevent titles being totally illegible.
+
+The above usage would create the following:
+```json
+{
+	"PFDUUTFB4D":{
+		"title":"PM Modi pointed out that ...",
+		"url":"https://zeenews.india.com/india/indias-energy-sector-to-be-growth-centric-industry-friendly-environment-conscious-pm-narendra-modi-2320293.html",
+		"source":"Zee News",
+		"image":"https://english.cdn.zeenews.com/images/logo/placeholder_image.jpg"
+		},
+	"SomeID":	{
+		// ...
+		}
+}
+```
+
+from a non-truncated:
+```json
+{
+	"PFDUUTFB4D":{
+		"title":"PM Modi pointed out that India is the third-largest and the fastest-growing aviation market in terms of domestic aviation. He stated that Indian carriers are projected to increase their fleet size from 600 to 1200 by 2024.PM said the target to increase the installed renewable energy capacity to 175 GW by 2022 has been further extended to 450 GW by 2030.",
+		"url":"https://zeenews.india.com/india/indias-energy-sector-to-be-growth-centric-industry-friendly-environment-conscious-pm-narendra-modi-2320293.html",
+		"source":"Zee News",
+		"image":"https://english.cdn.zeenews.com/images/logo/placeholder_image.jpg"
+		},
+	"SomeID":	{
+		// ...
+		}
+}
+```
