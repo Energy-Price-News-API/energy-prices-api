@@ -43,11 +43,6 @@ I would like to encourage contributions of any kind to this project:
   - In order to encourage others to join in, feel free to share what you have done on your social media/websites
   - If you know someone that has done something similar, please show them this project as their input would be greatly appreciated
 
-### A link to a resource for people who have never contributed to open source before.
-Here are a couple of friendly tutorials you can check out: http://makeapullrequest.com/ and http://www.firsttimersonly.com/
-
-Working on your first Pull Request? You can learn how for *free* by checking [this repo, first-contributions](https://github.com/firstcontributions/first-contributions/blob/main/README.md).
-
 # Getting started
 ### A quick walkthrough of how to submit a contribution.
 
