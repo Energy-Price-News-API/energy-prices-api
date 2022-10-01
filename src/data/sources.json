@@ -2,7 +2,7 @@
   {
     "name": "The Guardian",
     "site": "https://www.theguardian.com/uk/money",
-    "base": "https://12ft.io/",
+    "base": "https://12ft.io/https://www.theguardian.com",
     "region":"Europe"
   },
   {
@@ -20,13 +20,13 @@
   {
     "name": "Metro UK",
     "site": "https://metro.co.uk/news/uk/",
-    "base": "",
+    "base": "https://12ft.io/https://metro.co.uk",
     "region":"Europe"
   },
   {
     "name": "NewsBytes",
     "site": "https://www.newsbytesapp.com/",
-    "base": "",
+    "base": "https://www.newsbytesapp.com",
     "region":"Asia"
   },
   {
@@ -56,25 +56,25 @@
   {
     "name": "CNBC",
     "site": "https://www.cnbc.com/energy/",
-    "base": "",
+    "base": "https://www.cnbc.com",
     "region":"Americas"
   },
   {
     "name": "ABC News",
     "site": "https://abcnews.go.com/wn",
-    "base": "",
+    "base": "https://abcnews.go.com",
     "region":"Americas"
   },
   {
     "name": "The New York Times",
     "site": "https://www.nytimes.com/section/business",
-    "base": "",
+    "base": "https://www.nytimes.com",
     "region":"Americas"
   },
   {
     "name": "ABP News",
     "site": "https://news.abplive.com/topic/energy-sector",
-    "base": "",
+    "base": "https://news.abplive.com/",
     "region":"Asia"
   },
   {
@@ -92,13 +92,13 @@
   {
     "name": "The Globe And Mail",
     "site": "https://www.theglobeandmail.com/business/industry-news/energy-and-resources/",
-    "base": "https://www.theglobeandmail.com/",
+    "base": "https://www.theglobeandmail.com",
     "region":"Americas"
   },
   {
     "name": "Euronews",
     "site": "https://www.euronews.com/",
-    "base": "",
+    "base": "https://www.euronews.com",
     "region":"Europe"
   }
 ]
