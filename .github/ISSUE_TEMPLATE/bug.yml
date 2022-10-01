@@ -1,7 +1,7 @@
 name: 🐛 Bug report
 description: Create a report to help us address an error.
 title: 'Bug: '
-labels: [👀 awaiting triage, , 🐛 bug]
+labels: [👀 awaiting triage, 🐛 bug]
 body:
   - type: markdown
     attributes:
