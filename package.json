@@ -1,0 +1,70 @@
+{
+  "name": "energy-prices-api",
+  "version": "1.0.0",
+  "description": "info tracking on energy prices",
+  "main": "app.js",
+  "scripts": {
+    "start": "node src/app",
+    "dev": "nodemon src/app.js",
+    "test": "jest --detectOpenHandles"
+  },
+  "author": "Sam Anglin <s.anglin@live.co.uk> (https://github.com/MizouziE)",
+  "contributors": [
+    "Soshun Esaki (https://github.com/OakenSushi)",
+    "nulad (https://github.com/nulad)",
+    "takanome_dev (https://github.com/TAKANOME-DEV)",
+    "AyushiN (https://github.com/ANaphade)",
+    "Yoshemith Castellanos Irribarren (https://github.com/Yoshemith)",
+    "dbsaw (https://github.com/dbsaw)",
+    "Diego Cordoba (https://github.com/dcordoba97)",
+    "Anu (https://github.com/anu-codes)",
+    "James Neff (https://github.com/NeffCodes)",
+    "Jon Rutter (https://github.com/rutterjt)",
+    "Roberto (https://github.com/cortezroberto)",
+    "Elmir Ismayilov (https://www.linkedin.com/in/elmirismayilov/)",
+    "Ramón Soria (https://github.com/RamonASV)",
+    "alesbe (https://github.com/alesbe)",
+    "kvaithin (https://github.com/kvaithin)",
+    "apurva-hub (https://github.com/apurva-hub)",
+    "Christine Kim (https://github.com/cfkim)",
+    "Ghada (https://github.com/GAbdulwhb)",
+    "Klesta Luli (https://github.com/klezi10",
+    "Jayavardhan (https://github.com/eddejayaklu)",
+    "Dalu46 (https://github.com/Dalu46)",
+    "Ian Luciano (https://github.com/ianskie26)",
+    "Muiz Uvais (https://github.com/MuizU)",
+    "Scott Wilson (https://github.com/scottjwilson)",
+    "k-puchala (https://github.com/k-puchala)",
+    "Snehashish Ghosh (https://github.com/snehashish-ghosh98)",
+    "Abdullah Al Noman (https://github.com/nomandhoni-cs)",
+    "Rohan Nair (https://github.com/rohan9454)",
+    "mrajen27 (https://github.com/mrajen27)",
+    "Ketan Parmar (https://github.com/KetanParmar07)",
+    "Z Adil Khwaja (https://github.com/zadilkhwaja)",
+    "Mumin Ahmad Khan (https://github.com/MuminAhmadKhan)",
+    "Stefan Talbot (https://github.com/TeaBizzy)",
+    "Dev Parikh (https://github.com/Dev79844)",
+    "Will (https://github.com/pwill12)"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.26.1",
+    "cheerio": "^1.0.0-rc.10",
+    "express": "^4.17.3",
+    "express-rate-limit": "^6.4.0",
+    "short-crypt": "^1.0.25",
+    "got": ">=11.8.5"
+  },
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": "8.x"
+  },
+  "devDependencies": {
+    "all-contributors-cli": "^6.20.0",
+    "jest": "^28.1.0",
+    "nodemon": "^2.0.16",
+    "prettier": "2.6.2",
+    "supertest": "^6.2.3",
+    "got": ">=11.8.5"
+  }
+}
