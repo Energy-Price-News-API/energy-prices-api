@@ -1,11 +1,11 @@
-name: Feature request
+name: 🚀 Feature request
 description: Suggest features, propose improvements, discuss new ideas for this project
-title: "[FEAT] - <Feature description>"
-labels: ["🚦 status: awaiting triage"]
+title: 'Feature: '
+labels: [👀 needs triage, 💡 feature]
 body:
   - type: markdown
     attributes:
-      value: "# Feature request"
+      value: '#### Thanks for taking the time to fill out this feature request!'
   - type: textarea
     id: feature
     attributes:

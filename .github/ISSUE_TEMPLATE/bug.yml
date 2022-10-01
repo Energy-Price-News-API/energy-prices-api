@@ -1,11 +1,11 @@
-name: Bug report
+name: 🐛 Bug report
 description: Create a report to help us address an error.
-title: '[BUG] <bug description>'
-labels: [🚦 status: awaiting triage]
+title: 'Bug: '
+labels: [👀 awaiting triage, , 🐛 bug]
 body:
   - type: markdown
     attributes:
-      value: '# Bug report'
+      value: '#### Thanks for taking the time to fill out this bug report!'
   - type: textarea
     id: bug_description
     attributes:
