@@ -1,11 +1,11 @@
 name: Chore
 description: For requesting chores, such as cleaning up code.
-title: "[CHORE] - <Chore description>"
-labels: [🚦 status: awaiting triage]
+title: 'Chore: '
+labels: [👀 needs triage]
 body:
   - type: markdown
     attributes:
-      value: "# Chore request"
+      value: '#### Thanks for taking the time to fill out this issue'
   - type: textarea
     id: description
     attributes:
