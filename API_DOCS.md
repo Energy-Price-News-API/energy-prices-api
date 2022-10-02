@@ -51,12 +51,12 @@ You get the title, the url, the name of the source and some related image (if no
 
 ### Articles by single source
 
-[/api/news/{source}](http://localhost:8000/api/news/skynews)
+[/api/news/sources/{source}](http://localhost:8000/api/news/sources/skynews)
 
 These endpoints use the name of a single news source to retrieve **only the articles from that particular news source**. In the example above it will show for Sky News, but any of the avaiable sources can be used.
 
 > **Note**
-> The name of the source must be all lower case and spaces omitted, otherwise it will return a 404 error.
+> The name of the source must have spaces omitted, otherwise it will return a 404 error.
 
 ### Sources list
 
