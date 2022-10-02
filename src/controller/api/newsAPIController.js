@@ -68,7 +68,7 @@ const controller = {
     return res.json(articles);
   },
   getNewsBySource: async (req, res) => {
-    const sourceId = req.params.sourceId;
+    const sourceId = (req.params.sourceId).toLowerCase();
     const singleSourceArticles = {};
 
     const sourceSite = sources.filter(
