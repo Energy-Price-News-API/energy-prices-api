@@ -98,7 +98,7 @@
   {
     "name": "Euronews",
     "site": "https://www.euronews.com/",
-    "base": "",
+    "base": "https://www.euronews.com",
     "region":"Europe"
   }
 ]
