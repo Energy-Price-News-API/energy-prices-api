@@ -52,8 +52,8 @@
     "cheerio": "^1.0.0-rc.10",
     "express": "^4.17.3",
     "express-rate-limit": "^6.4.0",
-    "short-crypt": "^1.0.25",
-    "got": ">=11.8.5"
+    "got": ">=11.8.5",
+    "short-crypt": "^1.0.25"
   },
   "engines": {
     "node": "16.x",
@@ -61,10 +61,10 @@
   },
   "devDependencies": {
     "all-contributors-cli": "^6.20.0",
+    "got": ">=11.8.5",
     "jest": "^28.1.0",
     "nodemon": "^2.0.16",
     "prettier": "2.6.2",
-    "supertest": "^6.2.3",
-    "got": ">=11.8.5"
+    "supertest": "^6.2.3"
   }
 }
