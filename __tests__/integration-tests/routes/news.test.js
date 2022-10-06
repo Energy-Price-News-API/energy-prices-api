@@ -2,6 +2,7 @@ const mockAxios = require('axios');
 const supertest = require('supertest');
 const createServer = require('../../../src/server');
 const sources = require('../../../src/data/sources.json')
+const regions = require('../../../src/data/regions.json');
 
 const app = createServer();
 const request = supertest(app);
@@ -26,4 +27,23 @@ describe('News Sources Api Route', () => {
     expect(response.status).toBe(200);
     expect(response.body).toBeTruthy();
   })
+})
+
+describe('/api/news/sources', () => {
+  beforeEach(() => mockAxios.get('_')  );
+
+  it('should return data by regions', async () => {
+    
+    const response = await request.get('/api/news/regions');
+    const SUPPORTED_REGIONS = JSON.parse(JSON.stringify(regions)).map(region => region.name)
+    const responseRegions = Object.entries(response.body).map(([_, value]) => value.name)
+
+    expect(mockAxios.get).toHaveBeenCalledTimes(1);
+    expect(response.status).toBe(200);
+    expect(response.body).toBeTruthy();
+    responseRegions.forEach(region => {
+      expect(SUPPORTED_REGIONS).toContain(region)
+    })
+
+  });
 })
