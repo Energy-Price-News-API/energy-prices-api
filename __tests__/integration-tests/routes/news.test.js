@@ -41,9 +41,6 @@ describe('/api/news/sources', () => {
     expect(mockAxios.get).toHaveBeenCalledTimes(1);
     expect(response.status).toBe(200);
     expect(response.body).toBeTruthy();
-    responseRegions.forEach(region => {
-      expect(SUPPORTED_REGIONS).toContain(region)
-    })
-
+    expect(SUPPORTED_REGIONS).toEqual(responseRegions)
   });
 })
