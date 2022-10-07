@@ -35,12 +35,33 @@ describe('/api/news/sources', () => {
   it('should return data by regions', async () => {
     
     const response = await request.get('/api/news/regions');
-    const SUPPORTED_REGIONS = JSON.parse(JSON.stringify(regions)).map(region => region.name)
-    const responseRegions = Object.entries(response.body).map(([_, value]) => value.name)
+    const SUPPORTED_REGIONS = JSON.parse(JSON.stringify(regions)).map(region => region.name);
+    const responseRegions = Object.entries(response.body).map(([_, value]) => value.name);
 
     expect(mockAxios.get).toHaveBeenCalledTimes(1);
     expect(response.status).toBe(200);
     expect(response.body).toBeTruthy();
-    expect(SUPPORTED_REGIONS).toEqual(responseRegions)
+    expect(SUPPORTED_REGIONS).toEqual(responseRegions);
+  });
+
+  it('should return data by region id', async () => {
+    const REGION = 'asia';
+    const response = await request.get(`/api/news/regions/${REGION}`);
+    const responseByRegions = Object.entries(response.body).map(([_, value]) => value.Region);
+
+    expect(mockAxios.get).toHaveBeenCalledTimes(responseByRegions.length + 1);
+    expect(response.status).toBe(200);
+    expect(response.body).toBeTruthy();
+    responseByRegions.forEach(region => expect(region.toLowerCase()).toBe(REGION));
+  });
+
+  it('should return 404 for unsupported region id', async () => {
+    const REGION = 'unsupportedRegion';
+    const response = await request.get(`/api/news/regions/${REGION}`);
+
+    expect(mockAxios.get).toHaveBeenCalledTimes(1);
+    expect(response.status).toBe(404);
+    expect(response.body).toBeTruthy();
+    expect(response.data).toBe(undefined);
   });
 })
