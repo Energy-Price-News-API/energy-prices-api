@@ -7,17 +7,9 @@ const regions = require('../../../src/data/regions.json');
 const app = createServer();
 const request = supertest(app);
 
-describe('News Api Route Sources', () => {
-  beforeEach(() => mockAxios.get('_'));
-
-  it('should return all the articles', async () => {
-    const response = await request.get('/api/news/sources');
-    expect(mockAxios.get).toHaveBeenCalledTimes(1);
-    expect(response.status).toBe(200);
-    expect(response.body).toBeTruthy();
-  });
-});
-
+describe('News Api Route', () => {
+  
+ beforeEach(() => mockAxios.get('_'));
 describe('News Api Route', () => {
   beforeEach(() => mockAxios.get('_'));
 
@@ -55,3 +47,6 @@ describe('/api/news/sources', () => {
     expect(SUPPORTED_REGIONS).toEqual(responseRegions)
   });
 })
+});
+
+
