@@ -9,7 +9,6 @@ const request = supertest(app);
 
 describe('News Api Route', () => {
   
- beforeEach(() => mockAxios.get('_'));
 describe('News Api Route', () => {
   beforeEach(() => mockAxios.get('_'));
 
