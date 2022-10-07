@@ -51,12 +51,9 @@ describe('/api/news/sources/:sourceId', () => {
   it('should return a list of sources having same sourceId(i.e name)', async () => {
     
     const response = await request.get('/api/news/sources/:sourceId');
-    const SUPPORTED_SOURCES = JSON.parse(JSON.stringify(sources)).filter(source => source.name)
-    const responseSources = Object.entries(response.body).map(value => value.name)
 
     expect(mockAxios.get).toHaveBeenCalledTimes(1);
     expect(response.status).toBe(200);
     expect(response.body).toBeTruthy();
-
   });
 })
