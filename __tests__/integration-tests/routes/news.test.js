@@ -69,4 +69,18 @@ describe('/api/news/sources', () => {
 })
 });
 
+describe('/api/news/sources/:sourceId', () => {
+  beforeEach(() => mockAxios.get('_')  );
+
+  it('should return a list of sources having same sourceId(i.e name)', async () => {
+    
+    const response = await request.get('/api/news/sources/thetimes');
+    const responseSource = Object.keys(response.body).map((key) => response.body[key].source).some(value => value === "The Times");
+
+    expect(mockAxios.get).toHaveBeenCalledTimes(2);
+    expect(response.status).toBe(200);
+    expect(response.body).toBeTruthy();
+    expect(responseSource).toBeTruthy();
+  });
+})
 
