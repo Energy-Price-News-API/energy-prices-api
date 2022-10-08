@@ -7,7 +7,7 @@ const regions = require('../../../src/data/regions.json');
 const app = createServer();
 const request = supertest(app);
 
-describe('News Api Route', () => {
+describe('News All Articles (Main) Route', () => {
   
 describe('News Api Route', () => {
   beforeEach(() => mockAxios.get('_'));
