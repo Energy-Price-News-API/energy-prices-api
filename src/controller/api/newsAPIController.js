@@ -125,7 +125,7 @@ const controller = {
         try {
             
             const hosturl = `${req.protocol}://${req.get('host')}`; // url of host
-            const apipath = req.originalUrl.replace(req.url,''); //url of apipath
+            const apipath = req.originalUrl; //url of apipath
             let sourceObj = await sourceObject(source,hosturl+apipath)
             
             sourcesWithEndPoint[
@@ -176,7 +176,7 @@ const controller = {
       try {
         
           const hosturl = `${req.protocol}://${req.get('host')}`; // url of host
-          const apipath = req.originalUrl.replace(req.url,''); //url of apipath
+          const apipath = req.originalUrl.replace(req.url,'/sources'); //url of apipath
           let sourceObj = await sourceObject(source,hosturl+apipath)
           
           sourcesByRegion[
