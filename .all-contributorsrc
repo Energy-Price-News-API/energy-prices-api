@@ -1,6 +1,6 @@
 {
   "projectName": "energy-prices-api",
-  "projectOwner": "MizouziE",
+  "projectOwner": "Energy-Price-News-API",
   "repoType": "github",
   "repoHost": "https://github.com",
   "files": [
@@ -343,6 +343,15 @@
       "contributions": [
         "code",
         "example"
+      ]
+    },
+    {
+      "login": "rupali-codes",
+      "name": "Rupali Haldiya",
+      "avatar_url": "https://avatars.githubusercontent.com/u/78981177?v=4",
+      "profile": "http://linktr.ee/rupali_codes",
+      "contributions": [
+        "bug"
       ]
     }
   ],
