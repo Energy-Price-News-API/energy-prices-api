@@ -426,6 +426,15 @@
         "code",
         "test"
       ]
+    },
+    {
+      "login": "pedes",
+      "name": "Andres Cespedes Morales",
+      "avatar_url": "https://avatars.githubusercontent.com/u/533797?v=4",
+      "profile": "http://andrespedes.com",
+      "contributions": [
+        "maintenance"
+      ]
     }
   ],
   "contributorsPerLine": 7
