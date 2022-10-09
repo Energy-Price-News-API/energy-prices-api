@@ -373,6 +373,16 @@
         "ideas",
         "research"
       ]
+    },
+    {
+      "login": "sanyamgandhak",
+      "name": "Sayam Gandhak",
+      "avatar_url": "https://avatars.githubusercontent.com/u/60263165?v=4",
+      "profile": "https://samblogs.hashnode.dev/",
+      "contributions": [
+        "code",
+        "test"
+      ]
     }
   ],
   "contributorsPerLine": 7
