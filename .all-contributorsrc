@@ -362,6 +362,17 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "leonlafa",
+      "name": "Leon Lafayette",
+      "avatar_url": "https://avatars.githubusercontent.com/u/44982724?v=4",
+      "profile": "https://www.mayatechnology.co.uk/",
+      "contributions": [
+        "code",
+        "ideas",
+        "research"
+      ]
     }
   ],
   "contributorsPerLine": 7
