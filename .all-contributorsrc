@@ -376,6 +376,17 @@
         "code",
         "test"
       ]
+    },
+    {
+      "login": "reny-pacheco",
+      "name": "reny_pacheco",
+      "avatar_url": "https://avatars.githubusercontent.com/u/64537418?v=4",
+      "profile": "https://github.com/reny-pacheco",
+      "contributions": [
+        "code",
+        "test",
+        "ideas"
+      ]
     }
   ],
   "contributorsPerLine": 7
