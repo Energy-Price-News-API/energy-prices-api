@@ -387,6 +387,15 @@
         "test",
         "ideas"
       ]
+    },
+    {
+      "login": "chinmaykumbhare",
+      "name": "ChinmayKumbhare",
+      "avatar_url": "https://avatars.githubusercontent.com/u/48325404?v=4",
+      "profile": "https://github.com/chinmaykumbhare",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7

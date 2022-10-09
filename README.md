@@ -1,7 +1,7 @@
 # Energy Price News API
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-40-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-41-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 A project to create a public API that scrapes news sites for anything concerning the changes in energy prices.
@@ -116,6 +116,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="https://www.mayatechnology.co.uk/"><img src="https://avatars.githubusercontent.com/u/44982724?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Leon Lafayette</b></sub></a><br /><a href="https://github.com/Energy-Price-News-API/energy-prices-api/commits?author=leonlafa" title="Code">💻</a> <a href="#ideas-leonlafa" title="Ideas, Planning, & Feedback">🤔</a> <a href="#research-leonlafa" title="Research">🔬</a> <a href="https://github.com/Energy-Price-News-API/energy-prices-api/commits?author=leonlafa" title="Tests">⚠️</a></td>
     <td align="center"><a href="https://samblogs.hashnode.dev/"><img src="https://avatars.githubusercontent.com/u/60263165?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Sayam Gandhak</b></sub></a><br /><a href="https://github.com/Energy-Price-News-API/energy-prices-api/commits?author=sanyamgandhak" title="Code">💻</a> <a href="https://github.com/Energy-Price-News-API/energy-prices-api/commits?author=sanyamgandhak" title="Tests">⚠️</a></td>
     <td align="center"><a href="https://github.com/reny-pacheco"><img src="https://avatars.githubusercontent.com/u/64537418?v=4?s=100" width="100px;" alt=""/><br /><sub><b>reny_pacheco</b></sub></a><br /><a href="https://github.com/Energy-Price-News-API/energy-prices-api/commits?author=reny-pacheco" title="Code">💻</a> <a href="https://github.com/Energy-Price-News-API/energy-prices-api/commits?author=reny-pacheco" title="Tests">⚠️</a> <a href="#ideas-reny-pacheco" title="Ideas, Planning, & Feedback">🤔</a></td>
+    <td align="center"><a href="https://github.com/chinmaykumbhare"><img src="https://avatars.githubusercontent.com/u/48325404?v=4?s=100" width="100px;" alt=""/><br /><sub><b>ChinmayKumbhare</b></sub></a><br /><a href="https://github.com/Energy-Price-News-API/energy-prices-api/commits?author=chinmaykumbhare" title="Code">💻</a></td>
   </tr>
 </table>
 
