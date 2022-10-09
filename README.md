@@ -1,7 +1,7 @@
 # Energy Price News API
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-42-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-43-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 A project to create a public API that scrapes news sites for anything concerning the changes in energy prices.
@@ -118,6 +118,9 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="https://github.com/reny-pacheco"><img src="https://avatars.githubusercontent.com/u/64537418?v=4?s=100" width="100px;" alt=""/><br /><sub><b>reny_pacheco</b></sub></a><br /><a href="https://github.com/Energy-Price-News-API/energy-prices-api/commits?author=reny-pacheco" title="Code">💻</a> <a href="https://github.com/Energy-Price-News-API/energy-prices-api/commits?author=reny-pacheco" title="Tests">⚠️</a> <a href="#ideas-reny-pacheco" title="Ideas, Planning, & Feedback">🤔</a></td>
     <td align="center"><a href="https://github.com/chinmaykumbhare"><img src="https://avatars.githubusercontent.com/u/48325404?v=4?s=100" width="100px;" alt=""/><br /><sub><b>ChinmayKumbhare</b></sub></a><br /><a href="https://github.com/Energy-Price-News-API/energy-prices-api/commits?author=chinmaykumbhare" title="Code">💻</a></td>
     <td align="center"><a href="https://github.com/chankruze"><img src="https://avatars.githubusercontent.com/u/29806845?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Chandan Kumar Mandal</b></sub></a><br /><a href="https://github.com/Energy-Price-News-API/energy-prices-api/commits?author=chankruze" title="Code">💻</a></td>
+  </tr>
+  <tr>
+    <td align="center"><a href="https://github.com/blazenn2"><img src="https://avatars.githubusercontent.com/u/64981254?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Hamza Nawab</b></sub></a><br /><a href="https://github.com/Energy-Price-News-API/energy-prices-api/commits?author=blazenn2" title="Code">💻</a> <a href="https://github.com/Energy-Price-News-API/energy-prices-api/commits?author=blazenn2" title="Tests">⚠️</a></td>
   </tr>
 </table>
 
