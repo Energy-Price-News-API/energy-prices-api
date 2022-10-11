@@ -1,7 +1,7 @@
 # Energy Price News API
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-44-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-45-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 A project to create a public API that scrapes news sites for anything concerning the changes in energy prices.
@@ -123,6 +123,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <tr>
       <td align="center"><a href="https://github.com/blazenn2"><img src="https://avatars.githubusercontent.com/u/64981254?v=4?s=100" width="100px;" alt="Hamza Nawab"/><br /><sub><b>Hamza Nawab</b></sub></a><br /><a href="https://github.com/Energy-Price-News-API/energy-prices-api/commits?author=blazenn2" title="Code">💻</a> <a href="https://github.com/Energy-Price-News-API/energy-prices-api/commits?author=blazenn2" title="Tests">⚠️</a></td>
       <td align="center"><a href="http://andrespedes.com"><img src="https://avatars.githubusercontent.com/u/533797?v=4?s=100" width="100px;" alt="Andres Cespedes Morales"/><br /><sub><b>Andres Cespedes Morales</b></sub></a><br /><a href="#maintenance-pedes" title="Maintenance">🚧</a></td>
+      <td align="center"><a href="https://madalinignisca.github.io/"><img src="https://avatars.githubusercontent.com/u/619561?v=4?s=100" width="100px;" alt="Madalin Ignisca"/><br /><sub><b>Madalin Ignisca</b></sub></a><br /><a href="#infra-madalinignisca" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a> <a href="#mentoring-madalinignisca" title="Mentoring">🧑‍🏫</a></td>
     </tr>
   </tbody>
 </table>
