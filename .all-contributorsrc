@@ -435,6 +435,16 @@
       "contributions": [
         "maintenance"
       ]
+    },
+    {
+      "login": "madalinignisca",
+      "name": "Madalin Ignisca",
+      "avatar_url": "https://avatars.githubusercontent.com/u/619561?v=4",
+      "profile": "https://madalinignisca.github.io/",
+      "contributions": [
+        "infra",
+        "mentoring"
+      ]
     }
   ],
   "contributorsPerLine": 7
