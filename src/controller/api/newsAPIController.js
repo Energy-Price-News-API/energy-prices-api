@@ -21,7 +21,7 @@ fetchArticles();
 setInterval(() => {
   console.log("updating catalogue...");
   fetchArticles();
-}, 1800000);
+}, 1000 * 60 * 30);
 
 const sourceObject = async(source,baseUrl)=>{
   const response = await axios.get(source.site);
