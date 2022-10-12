@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node src/app",
     "dev": "nodemon src/app.js",
-    "test": "jest --detectOpenHandles"
+    "test": "jest"
   },
   "author": "Sam Anglin <s.anglin@live.co.uk> (https://github.com/MizouziE)",
   "contributors": [
