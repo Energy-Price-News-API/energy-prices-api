@@ -64,21 +64,18 @@ describe('paginate the articles given to it ', () => {
     });
     it('first page should have no next and no previous if total is less than or equal to limit ', () => {
         const value = paginate(mockReq, mockRes,Object.fromEntries(Object.entries(mockarticles).slice(0, mockReq.query.limit)));
-        
         expect(value.next).toBeUndefined();
         expect(value.previous).toBeUndefined();
         
     });
     it('first page should have next and no previous if total is greater than  limit ', () => {
         const value = paginate(mockReq, mockRes, mockarticles);
-       
         expect(value.next).toBeDefined();
         expect(value.previous).toBeUndefined();
         
     });
     it('last page should have no next  ', () => {
         const value = paginate({...mockReq,query:{limit:5,page:Math.ceil(Object.keys(mockarticles).length/5)}}, mockRes, mockarticles);
-       
         expect(value.previous).toBeDefined();
         expect(value.next).toBeUndefined();
         
