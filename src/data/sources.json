@@ -8,7 +8,7 @@
   {
     "name": "The Times",
     "site": "https://www.thetimes.co.uk/environment",
-    "base": "https://12ft.io/https://www.thetimes.co.uk",
+    "base": "https://12ft.io/",
     "region": "Europe"
   },
   {
@@ -86,7 +86,7 @@
   {
     "name": "The Economic Times",
     "site": "https://economictimes.indiatimes.com/industry/energy",
-    "base": "https://economictimes.indiatimes.com/",
+    "base": "https://economictimes.indiatimes.com",
     "region": "Asia"
   },
   {
