@@ -1,4 +1,4 @@
-const { default: axios } = require("axios");
+const axios = require("axios");
 const cheerio = require("cheerio");
 const defaultImage = 'https://energy-price-news.nosweat.cloud/img/energy-prices-api-socials.png'
 
