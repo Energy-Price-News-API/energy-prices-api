@@ -104,7 +104,7 @@
   {
     "name": "The Economist",
     "site": "https://www.economist.com/",
-    "base": "https://www.economist.com/",
+    "base": "https://www.economist.com",
     "region": "Europe"
   }
 ]

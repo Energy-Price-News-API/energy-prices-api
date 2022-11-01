@@ -10,7 +10,6 @@ async function getImage(url) {
     } else if (url.indexOf('http') !== url.lastIndexOf('http') 
         || url.match(/:\/\//) === null) {
 
-        console.log(`Tripped on ${url}`)
         return defaultImage;
 
     }
