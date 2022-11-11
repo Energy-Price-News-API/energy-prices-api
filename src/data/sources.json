@@ -106,5 +106,11 @@
     "site": "https://www.economist.com/",
     "base": "https://www.economist.com",
     "region": "Europe"
+  },
+  {
+    "name": "NBC News",
+    "site": "https://www.nbcnews.com/",
+    "base": "https://www.nbcnews.com",
+    "region": "Americas"
   }
 ]
