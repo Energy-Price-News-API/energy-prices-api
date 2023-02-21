@@ -481,6 +481,15 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "lukaszmielczarekdev",
+      "name": "Łukasz Mielczarek",
+      "avatar_url": "https://avatars.githubusercontent.com/u/88770213?v=4",
+      "profile": "https://github.com/lukaszmielczarekdev",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7
