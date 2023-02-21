@@ -112,5 +112,11 @@
     "site": "https://www.nbcnews.com/",
     "base": "https://www.nbcnews.com",
     "region": "Americas"
+  },
+  {
+    "name": "FOX News",
+    "site": "https://www.foxnews.com/category/us/energy",
+    "base": "https://www.foxnews.com",
+    "region": "Americas"
   }
 ]
