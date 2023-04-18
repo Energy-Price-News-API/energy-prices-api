@@ -118,5 +118,18 @@
     "site": "https://www.foxnews.com/category/us/energy",
     "base": "https://www.foxnews.com",
     "region": "Americas"
+  },
+  {
+    "name": "Aaj Tak",
+    "site": "https://www.aajtak.in/",
+    "base": "https://www.aajtak.in/",
+    "region": "Asia"
+  },
+  {
+    "name": "IEX",
+    "site": "https://www.iexindia.com/csr_policy.aspx?id=T659smRTNHw%3d&mid=IT8b%2bZM5cBA%3d",
+    "base": "https://www.iexindia.com/",
+    "region": "Asia"
   }
+
 ]
