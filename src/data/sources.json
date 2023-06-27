@@ -130,6 +130,17 @@
     "site": "https://www.iexindia.com/csr_policy.aspx?id=T659smRTNHw%3d&mid=IT8b%2bZM5cBA%3d",
     "base": "https://www.iexindia.com/",
     "region": "Asia"
+  },
+{
+    "name": "Forbes",
+    "site": "https://www.forbes.com/energy",
+    "base": "https://www.forbes.com/",
+    "region": "Global"
+  },
+{
+    "name": "Energy Voice",
+    "site": "https://www.energyvoice.com/",
+    "base": "https://www.energyvoice.com/",
+    "region": "Global"
   }
-
 ]
