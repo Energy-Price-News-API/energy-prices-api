@@ -499,7 +499,17 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "rahul0x00",
+      "name": "Rahul Kumar",
+      "avatar_url": "https://avatars.githubusercontent.com/u/104289350?v=4",
+      "profile": "https://bitsnbytes.gitbook.io/",
+      "contributions": [
+        "code"
+      ]
     }
   ],
-  "contributorsPerLine": 7
+  "contributorsPerLine": 7,
+  "commitType": "docs"
 }
