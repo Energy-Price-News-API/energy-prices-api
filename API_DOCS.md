@@ -2,9 +2,9 @@
 
 ## Use of production API
 
-To use the most recent deployed version of this API [click here to head over to RapidAPI](https://rapidapi.com/sanglin-TlEqlfGPc/api/energy-price-news) where you can sign up to recieve your `X-RapidAPI-Key` to use in your own application that wishes to make requests to this resource.
+To use the most recent deployed version of this API [click here to head over to RapidAPI](https://rapidapi.com/sanglin-TlEqlfGPc/api/energy-price-news) where you can sign up to receive your `X-RapidAPI-Key` to use in your own application that wishes to make requests to this resource.
 
-There you can also use their "API Playground" to test out endpoints, see real responses and also get excellent suggested code snippets to implement the API into projects on a number of popular languages and frameworks, including:
+There you can also use their "API Playground" to test out endpoints, see real responses, and also get excellent suggested code snippets to implement the API into projects on a number of popular languages and frameworks, including:
 
 - Node.js
 	- Axios
@@ -30,7 +30,7 @@ The purpose of this documentation is to help with working with the available end
 	- [Pagination](#pagination)
 
 > **Note**
-> The following links to examples of the endpoints assume that you already have the project cloned, installed and running on your system. See the README docs for how to do that.
+> The following links to examples of the endpoints assume that you already have the project cloned, installed, and running on your system. See the README docs for how to do that.
 
 ## Endpoints
 
@@ -47,7 +47,7 @@ This is the base and most simple endpoint that will provide a JSON of all scrape
     "image": "https://raw.githubusercontent.com/MizouziE/energy-prices-api/master/public/img/energy-prices-api-socials.png"
   },
 ```
-You get the title, the url, the name of the source and some related image (if not the default image of this project).
+You get the title, the url, the name of the source, and some related image (if not the default image of this project).
 
 ### Articles by single source
 
@@ -56,7 +56,7 @@ You get the title, the url, the name of the source and some related image (if no
 These endpoints use the name of a single news source to retrieve **only the articles from that particular news source**. In the example above it will show for Sky News, but any of the avaiable sources can be used.
 
 > **Note**
-> The name of the source must have spaces omitted, otherwise it will return a 404 error.
+> The name of the source must have spaces omitted, otherwise, it will return a 404 error.
 
 ### Sources list
 
@@ -71,7 +71,7 @@ This endpoint provides a list and some detail about the available sources, struc
     "Region": "Asia"
   },
 ```
-You get the name, url for it's individual endpoint, an image (or default) as well as the region that news source is attributed to.
+You get the name, url for it's individual endpoint, an image (or default) as well as the region that the news source is attributed to.
 
 ### Sources by region
 
@@ -91,14 +91,14 @@ This endpoint will give a list of regions that we currently have sources from. E
 
 [/api/news?page=1&limit=8](http://localhost:8000/api/news?page=1&limit=8)
 
-In the above example, you will see page 1 with the first 8 results, plus a link to the next page (page 2) plus a list of other details tht are described below.
+In the above example, you will see page 1 with the first 8 results, plus a link to the next page (page 2) plus a list of other details that are described below.
 
-Here is the necessary information regaridng the pagination feature:
+Here is the necessary information regarding the pagination feature:
 By adding query parameters `page=` and `limit=` any route can be paginated.
 
 The `page=` parameter is necessary while `limit=` is optional and by default set at 5.
 
-If neither of the parameters are passed, a list of results are returned, otherwise
+If neither of the parameters is passed, a list of results is returned, otherwise
 a list of the following format is returned:
 ```json
 {
@@ -121,7 +121,7 @@ As some of the returned articles can have excessively long titles which may inte
 
 By specifying the query parameter `trunc=` you may choose the integer value max character length of the titles returned. An ellipsis (...) will be appended automatically to indicate that it is truncated, so please consider the extra 3 characters if your usage is very length specific.
 
-A default minimum of 10 characters is set to prevent titles being totally illegible.
+A default minimum of 10 characters is set to prevent titles from being totally illegible.
 
 The above usage would create the following:
 ```json
