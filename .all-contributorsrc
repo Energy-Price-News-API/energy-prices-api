@@ -508,6 +508,15 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "Michael-c7",
+      "name": "Michael",
+      "avatar_url": "https://avatars.githubusercontent.com/u/58267348?v=4",
+      "profile": "https://michaelcarr.netlify.app",
+      "contributions": [
+        "doc"
+      ]
     }
   ],
   "contributorsPerLine": 7,
