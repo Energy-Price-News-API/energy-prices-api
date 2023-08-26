@@ -1,7 +1,7 @@
 # Energy Price News API
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-52-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-53-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 A project to create a public API that scrapes news sites for anything concerning the changes in energy prices.
@@ -133,6 +133,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/lukaszmielczarekdev"><img src="https://avatars.githubusercontent.com/u/88770213?v=4?s=100" width="100px;" alt="Łukasz Mielczarek"/><br /><sub><b>Łukasz Mielczarek</b></sub></a><br /><a href="https://github.com/Energy-Price-News-API/energy-prices-api/commits?author=lukaszmielczarekdev" title="Code">💻</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/anubhav1206"><img src="https://avatars.githubusercontent.com/u/53504460?v=4?s=100" width="100px;" alt="Anubhav Adhikari"/><br /><sub><b>Anubhav Adhikari</b></sub></a><br /><a href="https://github.com/Energy-Price-News-API/energy-prices-api/commits?author=anubhav1206" title="Code">💻</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://bitsnbytes.gitbook.io/"><img src="https://avatars.githubusercontent.com/u/104289350?v=4?s=100" width="100px;" alt="Rahul Kumar"/><br /><sub><b>Rahul Kumar</b></sub></a><br /><a href="https://github.com/Energy-Price-News-API/energy-prices-api/commits?author=rahul0x00" title="Code">💻</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://michaelcarr.netlify.app"><img src="https://avatars.githubusercontent.com/u/58267348?v=4?s=100" width="100px;" alt="Michael"/><br /><sub><b>Michael</b></sub></a><br /><a href="https://github.com/Energy-Price-News-API/energy-prices-api/commits?author=Michael-c7" title="Documentation">📖</a></td>
     </tr>
   </tbody>
 </table>
