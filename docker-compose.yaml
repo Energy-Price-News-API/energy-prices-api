@@ -1,23 +1,6 @@
 services:
-  https-portal:
-    image:  steveltn/https-portal:1
-    ports:
-      - "80:80"
-      - "443:443"
-    restart: always
-    environment:
-      DOMAINS:  " energy-price-news.mizouzie.dev -> http://energy-prices-api:8000"
-      # STAGE:  "production"
-      # FORCE_RENEW:  "true"
-    networks:
-      - bridged
-    depends_on:
-      - "energy-prices-api"
-
   energy-prices-api:
     build: .
     command: sleep infinity
     ports:
-      - "8000:8000"
-    networks:
-      - bridged
+      - "8001:8000"
