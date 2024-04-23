@@ -19,7 +19,7 @@ jobs:
       fail-fast: false
       matrix:
         language: ['javascript']
-        node-version: [16.x]
+        node-version: [20.x]
 
     steps:
       - name: Checkout repository
