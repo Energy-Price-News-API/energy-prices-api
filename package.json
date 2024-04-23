@@ -64,8 +64,8 @@
     "short-crypt": "^1.0.25"
   },
   "engines": {
-    "node": "16.x",
-    "npm": "8.x"
+    "node": "20.x",
+    "npm": "10.x"
   },
   "devDependencies": {
     "all-contributors-cli": "^6.20.0",
