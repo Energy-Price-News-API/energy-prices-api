@@ -1,16 +1,24 @@
+
 *{
     margin: 0px;
     padding: 0px;
 }
+:root {
+    --primary-bg: #4ca0e7;
+    --light-bg: rgb(245, 245, 245);
+    --white: #fff;
+    --text-color: #1b1b1b;
+    --hover-color: purple;
+}
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: rgb(245, 245, 245);
+    background-color: var(--light-bg);
 }
 
 /* NAVBAR */
 nav {
     height: 80px;
-    background: #4ca0e7;
+    background: var(--primary-bg);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -32,7 +40,7 @@ nav ul li{
     margin: 0 5px;
 }
 nav ul li a{
-    color: #fff;
+    color: var(--white);
     text-decoration: none;
     font-size: 18px;
     font-weight: 500;
@@ -42,11 +50,11 @@ nav ul li a{
     transition: all 0.3s ease;
 }
 nav ul li a:hover{
-    background: #fff;
-    color: #1b1b1b;
+    background: var(--white);
+    color: var(--text-color);
 }
 nav .menu-btn i {
-    color: #fff;
+    color: var(--white);
     font-size: 22px;
     cursor: pointer;
     display: none;
@@ -62,10 +70,10 @@ main{
     width: 90vw;
     margin: 0 auto;
     padding: 10px 10px;
-    background-color: rgb(245, 245, 245);
+    background-color: var(--light-bg);
 }
 article{
-    background-color: #fff;
+    background-color: var(--white);
     padding: 20px;
     margin-bottom: 20px;
     border-radius: 10px;
@@ -79,8 +87,8 @@ article ul{
 }
 /* FOOTER */
 footer{
-    color: #fff;
-    background: #4ca0e7;
+    color: var(--white);
+    background: var(--primary-bg);
     text-align: center;
 }
 footer .container{
@@ -96,14 +104,14 @@ footer ul li {
     padding: 1em;
 }
 footer ul a {
-    color: #fff;
+    color: var(--white);
     text-decoration: none;
 }
 footer ul li a i{
     font-size: 24px;
 }
 footer ul li a i:hover{
-    color: purple;
+    color: var(--hover-color);
 }
 footer p{
     margin: 0 auto;
@@ -144,7 +152,7 @@ footer p{
         display: block;
     }
     nav ul li a:hover{
-        color: #4ca0e7;
+        color: var(--primary-bg);
         background: none;
     }
 }
