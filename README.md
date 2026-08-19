@@ -24,12 +24,15 @@ This project was first thought up after watching [this video](https://www.youtub
 ## Language & Prerequisites
 
 - Javascript primarily, therefore:
-  - [Node.js >v16](https://nodejs.org)
+  - [Node.js >=24](https://nodejs.org)
   - [NPM](https://npmjs.org)
 - A browser extension for viewing JSON is helpful like [JSON Formatter](https://chrome.google.com/webstore/detail/json-formatter/bcjindcccaagfpapjjmafapmmgkkhgoa?hl=en)
 
 > **Warning**
 > The above mentioned Node version is important to be able to run this project properly as it makes use of some newer functions. Also, if you are not using linux, the JSON formatter browser extension is **HIGHLY** recommended.
+
+The required version is pinned in [`.nvmrc`](.nvmrc), so if you use `nvm` (or `fnm`/Volta) you can just run
+`nvm use` in the project root to switch to it. CI installs from the same file, so it will not drift.
 
 ## Installation
 

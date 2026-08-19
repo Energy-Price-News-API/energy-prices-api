@@ -1,0 +1,29 @@
+version: 2
+updates:
+  - package-ecosystem: npm
+    directory: /
+    schedule:
+      interval: weekly
+    open-pull-requests-limit: 10
+    assignees:
+      - MizouziE
+    groups:
+      # Batch the low-risk updates into one PR. Majors stay ungrouped so each
+      # arrives on its own and can be reviewed against the test suite.
+      npm-minor-and-patch:
+        patterns:
+          - '*'
+        update-types:
+          - minor
+          - patch
+
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: weekly
+    assignees:
+      - MizouziE
+    groups:
+      github-actions:
+        patterns:
+          - '*'

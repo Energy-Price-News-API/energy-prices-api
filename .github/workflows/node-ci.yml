@@ -12,21 +12,23 @@ jobs:
     name: Run Test Suites
     runs-on: ubuntu-latest
 
-    strategy:
-      matrix:
-        node-version: [20.x]
-
     steps:
       - name: Checkout Source Files
-        uses: actions/checkout@v3
+        uses: actions/checkout@v5
 
-      - name: Use Node.js v${{ matrix.node-version }}
-        uses: actions/setup-node@v3
+      - name: Use Node.js from .nvmrc
+        uses: actions/setup-node@v5
         with:
-          node-version: ${{ matrix.node-version }}
+          node-version-file: .nvmrc
+          cache: npm
 
+      # engine-strict lives here rather than in .npmrc: this runner is a
+      # runtime we control, whereas a repo-level .npmrc also applies to
+      # Dependabot's runner and hard-fails every update job with EBADENGINE.
       - name: Install Dependencies
-        run: npm install
+        run: npm ci
+        env:
+          npm_config_engine_strict: true
 
       - name: Run Tests
         run: npm run test
