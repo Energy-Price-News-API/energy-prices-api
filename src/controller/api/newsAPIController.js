@@ -1,7 +1,7 @@
 const axios = require('axios');
 const sources = require('../../data/sources.json');
 const regions = require('../../data/regions.json');
-const sc = require('short-crypt');
+const getShortId = require('../../utils/getShortId');
 const getDataFromCheerio = require('../../utils/getDataFromCheerio');
 const getSourceImageFromCheerio = require('../../utils/getSourceImageFromCheerio');
 const pagination = require('../../utils/paginate');
@@ -70,9 +70,7 @@ const controller = {
 
       returnedArticlesSingle.forEach(async (returnedSingle) => {
         singleSourceArticles[
-          new sc(returnedSingle.url)
-            .encryptToQRCodeAlphanumeric(returnedSingle.url)
-            .slice(0, 10)
+          getShortId(returnedSingle.url) // "hash" of the url which works as unique ID
         ] = {
           title: returnedSingle.title,
           url: sourceBase + returnedSingle.url,
@@ -112,9 +110,7 @@ const controller = {
             let sourceObj = await sourceObject(source,hosturl+apipath)
             
             sourcesWithEndPoint[
-              new sc(source.site)  // use short-crypt to "hash" the url which works as unique ID
-              .encryptToQRCodeAlphanumeric(source.site)
-              .slice(0, 10)
+              getShortId(source.site)  // "hash" of the url which works as unique ID
               ] = sourceObj
             }
         catch (error) {
@@ -134,9 +130,8 @@ const controller = {
     const apipath = req.originalUrl; //url of apipath
     regions.forEach((region)=>{
         const regionUrl = hosturl + apipath + `/${region.name.toLowerCase().replace(/ /g, '')}`;
-        regionsWithEndPoint[ // use short-crypt to "hash" the url which works as unique ID
-        new sc(regionUrl).encryptToQRCodeAlphanumeric(regionUrl)
-        .slice(0, 10)
+        regionsWithEndPoint[ // "hash" of the url which works as unique ID
+        getShortId(regionUrl)
         ] = {name:region.name,
            url: hosturl + apipath + `/${region.name.toLowerCase().replace(/ /g, '')}`
             } ;
@@ -163,9 +158,7 @@ const controller = {
           let sourceObj = await sourceObject(source,hosturl+apipath)
           
           sourcesByRegion[
-            new sc(source.site)  // use short-crypt to "hash" the url which works as unique ID
-            .encryptToQRCodeAlphanumeric(source.site)
-            .slice(0, 10)
+            getShortId(source.site)  // "hash" of the url which works as unique ID
             ] = sourceObj;
           }
       catch (error) {
