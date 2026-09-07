@@ -59,13 +59,13 @@
     "axios": "^1.20.0",
     "cheerio": "^1.2.0",
     "express": "^5.2.1",
-    "express-rate-limit": "^8.6.2"
+    "express-rate-limit": "^8.7.0"
   },
   "engines": {
     "node": ">=24"
   },
   "devDependencies": {
-    "jest": "^30.4.2",
+    "jest": "^30.5.1",
     "nodemon": "^3.1.14",
     "prettier": "3.9.6"
   }
