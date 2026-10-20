@@ -58,7 +58,7 @@
   "dependencies": {
     "axios": "^1.20.0",
     "cheerio": "^1.2.0",
-    "express": "^5.2.1",
+    "express": "^5.3.0",
     "express-rate-limit": "^8.7.1"
   },
   "engines": {
@@ -67,6 +67,6 @@
   "devDependencies": {
     "jest": "^30.5.2",
     "nodemon": "^3.1.14",
-    "prettier": "3.9.9"
+    "prettier": "3.9.10"
   }
 }
